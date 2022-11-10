@@ -84,65 +84,6 @@
     /* overflow: hidden; */
    
 }
-.box-1:hover {
-    transform: scale(1.2);
-}
-.box-2:hover {
-    transform: scale(1.2);
-}
-.box-3:hover {
-    transform: scale(1.2);
-}
-.box-4:hover {
-    transform: scale(1.2);
-}
-.box-5:hover {
-    transform: scale(1.2);
-}
-.boxsub-1 {
-    height: auto;
-    width: 60%;
-}
-.box-1 {
-    height: auto;
-    background-image: url("./../../../data/images/banner/16.jpg");
-    background-size: cover;
-    width: 40%;
-    background-position: center;
-    transition: 1s;
-}
-.box-2 {
-    height: auto;
-    background-image: url("./../../../data/images/banner/17.jpg");
-    background-size: cover;
-    width: 40%;
-    background-position: center;
-    transition: 1s;
-}
-.box-3 {
-    height: auto;
-    background-image: url("./../../../data/images/banner/18.jpg");
-    background-size: cover;
-    width: 40%;
-    background-position: center;
-    transition: 1s;
-}
-.box-4 {
-    height: auto;
-    background-image: url("./../../../data/images/banner/19.jpg");
-    background-size: cover;
-    width: 40%;
-    background-position: center;
-    transition: 1s;
-}
-.box-5 {
-    height: auto;
-    background-image: url("./../../../data/images/banner/20.jpg");
-    background-size: cover;
-    width: 40%;
-    background-position: center;
-    transition: 1s;
-}
 .title-box {
     text-align: center;
     font-family: "Lobster", cursive;

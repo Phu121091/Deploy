@@ -51,10 +51,11 @@
     padding: 2% 15% 1% 15%;
 }
 .end-page{
-    background-color: bisque;
+    background-color:dimgray;
     font-size: xxx-large;
     font-family: 'Pacifico';
-    color: black;
+    color: white;
+    padding: 20px;
 }
 
 .classic-title {
