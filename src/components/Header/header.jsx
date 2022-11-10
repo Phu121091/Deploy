@@ -56,7 +56,7 @@ const Header = () => {
       <IoIosArrowDown/>
       <div className="list-hidden list-1">
         <div className="list-country">
-        <Link>Viet Nam</Link>
+        <Link to="/Vietnam">Viet Nam</Link>
         <div className="list-mini">
         <Link>Ha Noi</Link>
         <Link>SaPa - Lao Cai</Link>

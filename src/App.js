@@ -23,7 +23,7 @@ import ShopInfor from "./pages/ShopInfor/ShopInfor";
 import TravelInfo from "./pages/TravelInfo/TravelInfo";
 import Feedback from "./pages/Home/Feedback/Feedback";
 import TripFinder from "./pages/TripFinder";
-
+import Vietnam from "./pages/Vietnam/Vietnam";
 
 
 
@@ -54,6 +54,7 @@ function App() {
       <Route path="/Heritages" element={<Heritages />} />
       <Route path="/Reponsive" element={<ReponsibleTravel />} />
       <Route path='/TripFinder' element={<TripFinder/>}/>
+      <Route path='/Vietnam' element={<Vietnam/>}/>
       </Routes>
       </Layout> 
       </BrowserRouter>
