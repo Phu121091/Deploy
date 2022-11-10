@@ -90,6 +90,7 @@ height: 100px;
     height: auto;
     width: 80%;
     margin: 5% 0 0 10%;
+    padding: 0 0 6% 0;
 }
 .picture-region{
     display: flex;
@@ -152,11 +153,38 @@ height: 100px;
     background-image: url('./../../data/images/banner/25.jpg');
     background-size: cover;
 }
-.text-bottom{
-    text-align: center;
-    padding: 3% 0 1% 0;
-    font-size: 19px;
+.a0002{
+    padding: 0 0 0 0;
+    
 }
+.area1{
+    height: 1000px;
+    margin: 15% 0% 0 0%;
+    display: flex;
+}
+.about-content{
+width: 80%;
+background-color: snow;
+}
+.a0003{
+    text-align: center;
+}
+.menu-area1 {
+    width: 20%;
+    background-color: snow;
+    margin-top: 9%;
+    border-left: double 4px darkgoldenrod;
+    text-align: left;
+    font-size: 25px;
+}
+.menu-area1 > ul {
+    padding: 6% 0 0 15%;
+    list-style-type: circle;
+}
+.menu-area1 > li:hover{
+    color: snow;
+}
+
 
 
 

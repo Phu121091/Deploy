@@ -27,16 +27,7 @@ const Vietnam = () => {
           <div className="space">TRUNG</div>
           <div className="space">NAM</div>
         </div>
-        <div className="text-bottom">
-        Lãnh thổ Việt Nam trải dài từ Bắc xuống Nam từ hơn ba trăm năm 
-        nay đã hình thành 3 miền địa lý là 
-        Bắc Bộ, Trung Bộ, và Nam Bộ. Đây là kết quả của quá trình Nam 
-        tiến kéo dài suốt một ngàn năm gần đây trong lịch sử Việt Nam.
-        Bắc Bộ hay là miền Bắc là một trong 3 vùng lãnh thổ của Việt Nam.
-         Dân cư Bắc Bộ tập trung đông tại Đồng bằng sông Hồng dù rằng đồi núi chiếm đa 
-         số diện tích Bắc Bộ. Bắc Bộ gồm 3 tiểu vùng là Tây Bắc Bộ, Đông Bắc Bộ và Đồng
-          bằng sông Hồng
-        </div>
+    
       </div>
       <div className="info-region">
         <div className="title-vietnam">
@@ -56,11 +47,21 @@ const Vietnam = () => {
           <div className="a000001 s10"> Ca Mau</div>
         </div>
       </div>
-      <div >
-
+      <div className="a0002">
+      <div className="area1">
+            <div className="about-content">
+               <div className="a0003"> Viet Nam co nhung gi? </div>
+            </div>
+            <div className="menu-area1">
+                <ul>
+                    <li> <a href="/">Info</a></li>
+                    <li> <a href="/">Weather</a></li>
+                    <li><a href="/">Destination Famous</a> </li>
+                    <li><a href="/">Place to go</a> </li>
+                </ul>       
+            </div>
+         </div>
       </div>
-      
-
     </div>
   );
 };
