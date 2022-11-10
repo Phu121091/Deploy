@@ -1,61 +1,24 @@
-.aboutus {
-    padding-bottom: 5%;
-    padding-top: 5%;	  
-  }
-  .aboutus h1 {
-    padding-left: 17%;
-    color: black;
-    font-size: 160px;
-    font-family: 'Shalimar', cursive;
-    position: relative;
-    left:0%;
-    animation: move ;
-    animation-duration: 10s ;
-    animation-fill-mode: forwards;
-  }
-  
-  .aboutus-contain {
-    display: block;
-    width: 40%;
-    margin-left: 10%;
-    background-color: rgb(247, 242, 233);
-    padding: 20px;
-    border: 1px solid rgb(111, 86, 86);
-  }
-  .aboutus-border {
-    border: dashed rgb(101, 48, 48);
-    border-width: 5px;
-    height: 300px;
+.aboutus{
+    margin-top: 5%;
     width: 100%;
-    padding: 5%;
-    display: flex;
-    align-items: center;
-  }
-  .aboutus-border p {
-    word-wrap: break-word;
-    text-align: center;
-  }
-  .hr1 {
-    margin-left: 10%;
-    width: 40%;
-    border : 1px solid black;
-    margin-bottom: 2%;
-    color:black;
-    opacity:1;
-  }
-  .hr2 {
-    margin-right: 10%;
-    margin-top: 2%;
-    border : 1px solid black;
-    color:black;
-    opacity:1;
-  }
-
-@keyframes move {
-  0% {
-    left:-10%;
-    }
-  100% {
-    left:0%;
-  }
+    padding: 5% 20%;  
+    background-color: rgb(170, 182, 208); 
 }
+.au-h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;   
+}
+.au-main{
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+}
+.au-p{
+    width: 90%;
+
+}
+.au-img{
+    width: 30%;
+    margin: auto auto;
+}
+

@@ -1,36 +1,26 @@
-import { duration } from 'moment';
+
 import React from 'react';
-// import AboutUsDefault from './AboutUs.style';
 import { useState } from 'react';
-import ImgBG from '../../../data/images/banner/sea.jpg';
 import './AboutUs.css';
+import {Link} from 'react-router-dom';
 
 const AboutUs = () => {
-  // const [localX,setlocalX]=useState('noplay');
-  // window.addEventListener('scroll', function() {
-  //   console.log(window.pageYOffset + 'px') ;
-  //   if (window.pageYOffset>3800) setlocalX('play');
-  // });
 
   return (
-    // <AboutUsDefault>
-      <div className="aboutus" style={{backgroundImage:`url${ImgBG}`}}>
-        <h1>About Us</h1>
-        <hr className="hr1" />
-        <div className="aboutus-contain">
-          <div className="aboutus-border">
-            <p>
-              We are the ultimate travel and tour leading company based in Any
-              State. We are experts in the extraordinary with a worldwide
-              portfolio. Inspiring memorable holidays with skilled and First Aid
-              certified guides for over 20 years. We always ensure you are
-              happy, assisted, and safe during your tour.
-            </p>
-          </div>
+      <div className="aboutus" >
+        <div className='au-title'>
+        <h1 className='au-h1'>About Us</h1>  
+        <p className='au-p'>We are proud to be the branch company specialized in organizing in Indochina under Voyages Saigon – a travel company that was born and operated in the 1980s and officially brought the brand to customers in 1991. Voyages Saigon serves Serving delegations from North America, Canada with extremely selected and designed products to most destinations around the world.
+        </p>
+        <Link to='/'>See more...</Link>
         </div>
-        <hr className="hr2" />
+        
+        <div className='au-main'>
+          <img className='au-img' src='https://th.bing.com/th/id/OIP.bhS6VJpakSO_f1496NMa2AHaHa?pid=ImgDet&rs=1'/>
+          <img className='au-img' src='https://th.bing.com/th/id/OIP.bhS6VJpakSO_f1496NMa2AHaHa?pid=ImgDet&rs=1'/>
+          <img className='au-img' src='https://th.bing.com/th/id/OIP.bhS6VJpakSO_f1496NMa2AHaHa?pid=ImgDet&rs=1'/>
+          </div>
       </div>
-    // </AboutUsDefault>
   );
 };
 

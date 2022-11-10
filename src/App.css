@@ -22,3 +22,11 @@ a{
 svg,button{
   cursor: pointer;
 }
+p{
+  font-family: 'Poppins', sans-serif;
+  color: dimgray;
+}
+h1{
+  font-family: 'Poppins', sans-serif;
+  color: dimgray;
+}
