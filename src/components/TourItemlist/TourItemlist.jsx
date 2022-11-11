@@ -2,7 +2,7 @@ import React from 'react'
 import { BsArrowRight, BsHeart, BsImages, BsPeopleFill } from 'react-icons/bs';
 import { FaBed } from 'react-icons/fa';
 import { GiMeal } from 'react-icons/gi';
-import {SiGooglestreetview, SiGooglestreetviews} from 'react-icons/si'
+import {SiGooglestreetview} from 'react-icons/si'
 import { MdTransferWithinAStation } from 'react-icons/md';
 import { RiMoneyDollarCircleLine, Ri24HoursFill } from "react-icons/ri";
 import './style.css';
@@ -23,36 +23,29 @@ const TourItemlist = ({status}) => {
                     <Ri24HoursFill className='icon-length'/>
                     <span>12 Days</span>
                 </div>
-                <div className="title-box">HA LONG 4 DAY - 3 NIGHT</div>
+                <div className="title-box">HA LONG 12 DAY - 11 NIGHT</div>
               </div>
               <div className="title-highlight">
                 <ul className="highlight">
                   <li>
                     {" "}
-                    Taste Hanoi beer and experience the Vietnamese beer drinking
-                    cultur{" "}
-                  </li>
-                  <li>
-                    Take in a cooking demonstration with the chef to learn about
-                    Vietnamese food, while floating through Halong Bay{" "}
+                      We'll see that in Hanoi's lovely Old Quarter, where the city's hectic rhythm may be experienced.{" "}
                   </li>
                   <li>
                     {" "}
-                    Explore the Imperial Citadel, a UNESCO-designated World
-                    Heritage Site, and sample Hue cuisine for its authentic and
-                    recognizable flavor{" "}
+                    Great entertainment and the ideal opportunity to sample some of the lesser-known foods that locals in Hanoi and Hoi An enjoy eating.{" "}
                   </li>
                   <li>
                     {" "}
-                    Try the food at the busiest street booths and secret
-                    passageways in Hoi An Town in true native fashion while
-                    riding a motorcycle.{" "}
+                    Take in the breathtaking natural splendor of Halong Bay, which is a World Heritage Site and is also known as "Dragon Descending to the Sea" in Vietnamese.{" "}
                   </li>
                   <li>
                     {" "}
-                    Experience the vast Mekong Delta's rural villages, farming
-                    practices, and fruit orchards by boat through its winding
-                    canals while sampling local delicacies.
+                    Gain deeper insight into locals' daily lives in the Mekong Delta, which serves as a spiritual representation of the region's distinctiveness.{" "}
+                  </li>
+                  <li>
+                    {" "}
+                    Get the chance to learn about a fun itinerary and take part in a lot of activities with locals, on Tan Phong island.{" "}
                   </li>
                 </ul>
               </div>
@@ -72,11 +65,13 @@ const TourItemlist = ({status}) => {
                       <li>Hoi An</li>
                       <BsArrowRight />
                       <li>Hue</li>
+                      <BsArrowRight />
+                      <li>...</li>
                     </ul>
                   </div>
                 </div>
                 <div className="button-show">
-                  <a href="/"> Show more..</a>
+                  <a href="/">Detail ...</a>
                 </div>
               </div>
             </div>

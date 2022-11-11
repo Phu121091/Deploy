@@ -87,6 +87,14 @@
   padding: 0 6% 0 12%;
 }
 
+.highlight li {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #666666;
+}
+
 .read-more {
   display: flex;
   padding: 1% 0 2% 0;

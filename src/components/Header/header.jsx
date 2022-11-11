@@ -1,6 +1,6 @@
 import React, { useEffect ,useState ,useContext } from "react";
 import { NavLink,Link, useNavigate, useLocation } from "react-router-dom";
-import {BsSuitHeart,BsPerson,BsHeart} from 'react-icons/bs';
+import {BsSuitHeart,BsPerson} from 'react-icons/bs';
 import {GrUserAdmin} from 'react-icons/gr';
 import './header.css';
 import { UserContext } from '../Layout';
@@ -36,12 +36,12 @@ const Header = () => {
 
 // Show-hide Log and Search
   const ShowFind = () => {
-    if (showfind=='show'){
+    if (showfind==='show'){
       setshowfind('hidden')
     } else setshowfind('show')
   }
   const Showlog = () => {
-    {showlog=='show'?setshowlog('hidden'):setshowlog('show')}
+    showlog==='show'?setshowlog('hidden'):setshowlog('show')
   }
 
   return (
@@ -121,6 +121,7 @@ const Header = () => {
       </NavLink>
       <IoIosArrowDown/>
       <div className="list-hidden list-3">
+        <Link to='/Golf'>GOLF</Link>
         <Link to='/Welles'>WELLES</Link>
         <Link to='/Mice'>M.I.C.E</Link>
         <Link to='/Luxury'>LUXURY</Link>
@@ -158,8 +159,8 @@ const Header = () => {
       </div>
     </div>
       
-      <div className="phone-find-container" onClick={()=>ShowFind()}>
-        <div className="find-container">
+      <div className="phone-find-container">
+        <div className="find-container" onClick={()=>ShowFind()}>
         <FaSearchLocation className="header-icon"/>
         <button type='text' className="find-btn">Search</button>
         </div>
@@ -186,7 +187,7 @@ const Header = () => {
 
       ) :
       (
-        <div className="log"  onClick={()=>Showlog()}>
+        <div className="log" onClick={()=>Showlog()}>
         <p>For User</p>
         <IoIosArrowForward/>
         </div>
