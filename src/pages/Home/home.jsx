@@ -14,6 +14,7 @@ import SuggestTour from '../../components/SuggestTour/SuggestTour';
 import AboutUs from './AboutUs/AboutUs';
 import Plus from './Plus/Plus';
 import Review from './Review/Review';
+import Bloglist from './Review/Bloglist/Bloglist';
   
 const Home = () => {
   
@@ -57,7 +58,7 @@ const Home = () => {
 {/* Special tour */}
       <SpecialTour />
       <Review/>
-      <hr className='hr'/>
+      <Bloglist/>
       {/* <AboutUs/> */}
       
       <Whychoose/>
