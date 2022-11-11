@@ -1,4 +1,5 @@
 import React from 'react'
+import { BsHeart } from 'react-icons/bs';
 import { RiMoneyDollarCircleLine, Ri24HoursFill } from "react-icons/ri";
 import './style.css';
  
@@ -45,7 +46,8 @@ const TourItemlist = ({status}) => {
               <div className="read-more">
                 <div className="icon-show">
                   <div className="money">
-                    <RiMoneyDollarCircleLine /> FROM 1054${" "}
+                    <RiMoneyDollarCircleLine /> 
+                    <span className='tour-price'>ONLY FROM <b>$3358 </b>PP</span>
                   </div>
                   <div className="day-lenght">
                     <Ri24HoursFill /> 12 Day
@@ -55,6 +57,16 @@ const TourItemlist = ({status}) => {
                   <a href="/"> Show more..</a>
                 </div>
               </div>
+            </div>
+          </div>
+          <hr />
+          <div className="bottom-container">
+            <div className="handpick">
+              <span>Handpicked</span>
+            </div>
+            <div className="tour-explore">
+              <a href="#!">EXPLORE THIS TRIP</a>
+              <BsHeart className='tour-heart'/>
             </div>
           </div>
         </div>

@@ -1,16 +1,16 @@
 import React from 'react'
-import './Cruises.css';
+import "../../TravelStyle/TravelStyle.css"
 import TourItemlist from "../../../components/TourItemlist/TourItemlist";
 
 const Cruises = () => {
   return (
     <div className="body-cruises">
-    <div className="cruises-content">Cruises</div>
-    <div className="detail-cruises">
+    <div className="travelstyle-content">Cruises</div>
+    <div className="detail-travelstyle">
       {" "}
       A house is built by hands, but a home is built by heart.{" "}
     </div>
-    <div className="cruises-container">
+    <div className="travelstyle-container">
     <div className="page-up">
           <div className="title-top"> See The World Together</div>
           <div className="middle-page"> 

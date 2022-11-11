@@ -1,17 +1,16 @@
 import React from "react";
-import "./Family.css";
-import { RiMoneyDollarCircleLine, Ri24HoursFill } from "react-icons/ri";
+import "../../TravelStyle/TravelStyle.css"
 import TourItemlist from "../../../components/TourItemlist/TourItemlist";
 
 const Family = () => {
   return (
     <div className="body-family">
-      <div className="family-content">Family</div>
-      <div className="detail-family">
+      <div className="travelstyle-content">Family</div>
+      <div className="detail-travelstyle">
         {" "}
         A house is built by hands, but a home is built by heart.{" "}
       </div>
-      <div className="family-container">
+      <div className="travelstyle-container">
       <div className="page-up">
           <div className="title-top"> See The World Together</div>
           <div className="middle-page"> 
