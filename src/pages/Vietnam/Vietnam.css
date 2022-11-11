@@ -172,7 +172,7 @@ background-color: snow;
     font-family: fantasy;
 }
 .a0007{
-    margin-left: -38%;
+    margin: 0 0 2% -40%;
     font-size: 50px;
     font-family: fantasy;
 }
@@ -245,7 +245,7 @@ background-color: snow;
 }
 .tour-invn{
 display: flex;
-padding-top: 4%;
+
 }
 .tour{
     padding: 2% 0 2% 0;
@@ -265,4 +265,8 @@ padding-top: 4%;
     border-radius: 10px;
     width: 40%;
 }
-
+.a0009{
+    font-size: 50px;
+    font-family: fantasy;
+    margin: 1% 60% 1% 0;
+}
