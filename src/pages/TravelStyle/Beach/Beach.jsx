@@ -15,12 +15,11 @@ const Beach = () => {
       <div className="page-up">
           <div className="title-top"> See The World Together</div>
           <div className="middle-page"> 
-          We don’t believe “let’s have kids” should mean you have to stop exploring the world.
-           We also don’t believe you should get home from a holiday just as tired as when you left.
-            So we have real parents at B&R design and test-drive everything.
-             Our resulting journeys get rave reviews from young and young-at-heart people alike.
-              Nothing’s dumbed-down, everything’s 100% stress-free, 
-              and there’s always as much action and excitement as the kids can handle.
+            With a coastline stretching from the northern pole (Mong Cai) to the southernmost 
+            tip of the country (Ca Mau) - Vietnam is also known as the island nation with many enchanting beaches 
+            and mysterious caves. Many times recently, the beaches of Da Nang, Nha Trang, Phu Quoc 
+            and the system of sea islands and Ha Long caves have been honored by reputable tourism organizations and magazines. 
+            Please see below for more details.
           </div>
           <div className="end-page"> Look By Eyes- Feel By Heart </div>
         </div>
