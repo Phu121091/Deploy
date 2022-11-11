@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import { BsArrowDown, BsArrowLeft, BsArrowRight } from 'react-icons/bs';
+import { BsArrowLeft, BsArrowRight } from 'react-icons/bs';
 import './Feedback.css'
 
 function Feedback() {

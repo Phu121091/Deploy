@@ -8,7 +8,36 @@
   position: relative;
 }
 
-.box-1:hover {
+.simpletour-1 hr {
+  width: 95%;
+  margin: 8px;
+  margin-left: 30px;
+  left: 0;
+  right: 0;
+}
+
+.top-container {
+  display: flex;
+  overflow: hidden;
+}
+
+.box-1 {
+  width: 428px;
+  height: 360px;
+  overflow: hidden;
+  margin: 24px 24px 0 12px;
+}
+
+.box-img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  transition: 1s;
+}
+
+.box-img:hover {
   transform: scale(1.2);
 }
 
@@ -16,21 +45,112 @@
   height: auto;
   width: 60%;
 }
-.box-1 {
-  height: auto;
-  background-image: url("../../data/images/banner/16.jpg");
-  background-size: cover;
-  width: 40%;
-  background-position: center;
+
+.tour-info {
+  display: flex;
+  align-items: center;
+  margin-left: 75px;
+}
+
+.day-length {
+  display: flex;
+  align-items: center;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 14px;
+}
+
+.day-length span {
+  font-size: 14px !important;
+}
+
+.icon-length {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  margin-right: 8px;
+}
+
+.title-box {
+  text-align: center;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 35px;
+  padding: 3% 0 3% 5%;
+}
+
+.title-box:hover {
+  color: #d0b316;
   transition: 1s;
 }
 
-.simpletour-1 hr {
-  width: 95%;
-  margin: 8px;
-  margin-left: 30px;
-  left: 0;
-  right: 0;
+.title-highlight {
+  text-align: left;
+  padding: 0 6% 0 12%;
+}
+
+.read-more {
+  display: flex;
+  padding: 1% 0 2% 0;
+}
+
+.icon-show {
+  width: 70%;
+  padding: 0 0 0 12%;
+  text-align: left;
+  font-size: 20px;
+  font-family: "Lobster";
+}
+
+.money {
+  display: flex;
+  align-items: center;
+}
+
+.money-icon {
+  font-size: 28px;
+}
+
+.tour-price {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  padding-left: 12px;
+}
+
+.tour-price b {
+  font-size: 18px;
+}
+
+.tour-journeys {
+  display: flex;
+  align-items: center;
+}
+
+.journeys-map {
+  font-size: 24px;
+  margin: 0 4px 0 3px ;
+}
+
+.journeys-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.journeys-list li {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 12px;
+}
+
+.journeys-list li:hover {
+    color: #d0b316;
+    cursor: pointer;
+}
+
+.button-show {
+  width: 30%;
 }
 
 .bottom-container {
@@ -43,25 +163,58 @@
 }
 
 .handpick {
+  display: flex;
+  align-items: center;
   font-size: 14px;
   font-weight: 400;
   color: #888888;
 }
 
-.tour-price {
-  font-family: "Montserrat", Arial, sans-serif;
-  font-size: 22px !important;
-  font-weight: 400 !important;
-  padding-left: 12px;
+.handpick-list {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 50px;
 }
 
-.tour-price b {
-  font-size: 18px;
+.handpick-title {
+  display: none;
+  align-items: center;
+  background-color: #d0b316;
+  font-size: 12px;
+  color: #fff;
+  padding: 4px;
+  border-radius: 5px;
+  margin-top: -30px;
+  margin-bottom: 5px;
+  margin-left: 20px;
+}
+
+.handpick-icon {
+  height: 22px;
+  width: 22px;
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.handpick-icon:hover {
+  color: #d0b316;
+  transition: 0.5s;
+}
+
+.handpick-list:hover .handpick-title {
+  display: block;
+  transition: 0.5s;
 }
 
 .tour-explore {
   display: flex;
   align-items: center;
+  right: 0;
 }
 
 .tour-explore:hover {
