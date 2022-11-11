@@ -72,7 +72,7 @@ const Header = () => {
         </div>
 
         <div className="list-country">
-        <Link>Lao</Link>
+        <Link to="/Lao">Lao</Link>
         <div className="list-mini">
         <Link>Luang Prabang</Link>
         <Link>Viang Chan</Link>
@@ -80,7 +80,7 @@ const Header = () => {
         </div>
 
         <div className="list-country">
-        <Link>Thai Lan</Link>
+        <Link to="/Thailan">Thai Lan</Link>
         <div className="list-mini">
         <Link>Bangkok</Link>
         <Link>Koh Panyee</Link>
@@ -89,7 +89,7 @@ const Header = () => {
         </div>
 
         <div className="list-country">
-        <Link>Campuchia</Link>
+        <Link to="/Campuchia">Campuchia</Link>
         <div className="list-mini">
         <Link>Angkor Wat, Angkor Thom</Link>
         <Link>Phnom Penh</Link>

@@ -24,7 +24,9 @@ import TravelInfo from "./pages/TravelInfo/TravelInfo";
 import Feedback from "./pages/Home/Feedback/Feedback";
 import TripFinder from "./pages/TripFinder";
 import Vietnam from "./pages/Vietnam/Vietnam";
-
+import Lao from "./pages/Laos/Lao";
+import Campuchia from "./pages/Campuchia/Campuchia";
+import Thailan from "./pages/Thailan/Thailan";
 
 
  
@@ -55,6 +57,9 @@ function App() {
       <Route path="/Reponsive" element={<ReponsibleTravel />} />
       <Route path='/TripFinder' element={<TripFinder/>}/>
       <Route path='/Vietnam' element={<Vietnam/>}/>
+      <Route path='/Lao' element={<Lao/>}/>
+      <Route path='/Thailan' element={<Thailan/>}/>
+      <Route path='/Campuchia' element={<Campuchia/>}/>
       </Routes>
       </Layout> 
       </BrowserRouter>
