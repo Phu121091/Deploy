@@ -1,0 +1,56 @@
+.Lao{
+    height: auto;
+}
+.headder{
+    height: 1300px;
+    background-image: url('./../../data/images/banner/campuchia.jpg');
+    background-size: cover;
+}
+.support-1{
+    text-align: center;
+    color: white;
+    background-color: burlywood;
+    padding: 1% 0 1% 0;
+}
+.title-tops{
+    font-size: 20px;
+    padding-bottom: 1%;
+}
+.title-middle{
+    font-size: 70px;
+    color: burlywood;
+    background-color: snow;
+}
+.title-bot{
+    font-size: 20px;
+    padding-top: 1%;
+}
+.piture-lao{
+    background-color: #494949;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2%;
+}
+.pictulao{
+    width: 20%;
+    background-image: url('./../../data/images/banner/25.jpg');
+    background-size: cover;
+}
+.place{
+    display: flex;
+}
+.place-1{
+    width: 50%;
+    background-image: url('./../../data/images/banner/33.jpg');
+    background-size: cover;
+    height: 400px;
+}
+.a00010{
+    text-align: center;
+    color: aliceblue;
+    text-decoration: underline;
+    font-size: 40px;
+    font-family: fantasy;
+    margin: 2% 30% 0 0;
+}
