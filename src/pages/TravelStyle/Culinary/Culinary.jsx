@@ -1,16 +1,16 @@
-import React from 'react'
-import './Culinary.css';
+import React from 'react';
+import "../../TravelStyle/TravelStyle.css"
 import TourItemlist from "../../../components/TourItemlist/TourItemlist";
 
 const Culinary = () => {
   return (
     <div className="body-culinary">
-    <div className="culinary-content">Culinary</div>
-    <div className="detail-culinary">
+    <div className="travelstyle-content">Culinary</div>
+    <div className="detail-travelstyle">
       
       A house is built by hands, but a home is built by heart.
     </div>
-    <div className="culinary-container">
+    <div className="travelstyle-container">
     <div className="page-up">
           <div className="title-top"> See The World Together</div>
           <div className="middle-page"> 

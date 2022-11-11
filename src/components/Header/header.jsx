@@ -201,7 +201,7 @@ const Header = () => {
       <div className="log-container" id={showlog}>
 
         <Link to='/LogIn' className="log-link">Log in</Link>
-        <Link to='/SignUp' className="log-link">Sign-in</Link>
+        <Link to='/SignUp' className="log-link">Register</Link>
       </div>
     
     

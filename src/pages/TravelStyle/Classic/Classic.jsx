@@ -1,13 +1,14 @@
 import React from "react";
-import "./Classic.css";
+import "../../TravelStyle/TravelStyle.css"
 import TourItemlist from "../../../components/TourItemlist/TourItemlist";
+
 
 const Classic = () => {
   return (
     <div className="body-classic">
       <div className="banner-picture">
-        <div className="title-classic">Classic</div>
-        <div className="detail-classic"> Việt Nam - Timeless Charm </div>
+        <div className="title-travelstyle">Classic</div>
+        <div className="detail-travelstyle"> Việt Nam - Timeless Charm </div>
       </div>
       <div className="are-main">
       <div className="page-up">

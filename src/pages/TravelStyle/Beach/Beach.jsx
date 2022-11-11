@@ -1,17 +1,17 @@
 import React from "react";
-import "./Beach.css";
+import "../../TravelStyle/TravelStyle.css"
 import { RiMoneyDollarCircleLine, Ri24HoursFill } from "react-icons/ri";
 import TourItemlist from "../../../components/TourItemlist/TourItemlist";
 
 const Beach = () => {
   return (
     <div className="body-beach">
-      <div className="beach-content">Beach</div>
-      <div className="detail-beach">
+      <div className="travelstyle-content">Beach</div>
+      <div className="detail-travelstyle">
         {" "}
         A house is built by hands, but a home is built by heart.{" "}
       </div>
-      <div className="beach-container">
+      <div className="travelstyle-container">
       <div className="page-up">
           <div className="title-top"> See The World Together</div>
           <div className="middle-page"> 
