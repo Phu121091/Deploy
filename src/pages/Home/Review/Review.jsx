@@ -14,34 +14,14 @@ const Review = () => {
 
   return (
     <div className='review'>
-        <h1>Review</h1>
-    <Carousel effect="fade" autoplay duration='2s' className='slide-review-container'>
-    <div>
-      <div style={contentStyle} className='slide-review sr1'>
-      <p>"_Nhiều điểm đến thú vị_"</p>
+      <h1>Review and feedback</h1>
+      <div className='review-main'>
+        <div className='review-img'>
+          <img src='https://th.bing.com/th/id/OIP.XqO6cETFqVBVcTHoDrdybAHaIs?pid=ImgDet&rs=1'/>
+        </div>
+        <p>" Một chuyến đi tuyệt vời , trải nghiệm thú vị và vô cùng mới mẻ , tôi nhất đinh sẽ quay trở lại nơi đây"</p>
       </div>
-    </div>
-    <div>
-      <div style={contentStyle} className='slide-review sr2'>
-      <p>"_Thủ tục nhanh chóng_"</p>
-      </div>
-    </div>
-    <div>
-      <div style={contentStyle} className='slide-review sr3'>
-      <p>"_Hướng dẫn viên quá xinh_"</p>
-      </div>
-    </div>
-    <div>
-      <div style={contentStyle} className='slide-review sr4'>
-      <p>"_Xếp lịch nhanh quá trời_"</p>
-      </div>
-    </div>
-    <div>
-      <div style={contentStyle} className='slide-review sr5'>
-      <p>"_Vé rê quá trời_"</p>
-      </div>
-    </div>
-  </Carousel>
+
     </div>
   )
 }

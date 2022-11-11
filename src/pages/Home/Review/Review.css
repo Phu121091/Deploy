@@ -1,10 +1,16 @@
-.slide-review{
-    background-color: white;
+.review-main{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
 }
-.slide-review p{
-    color: black;
+.review-img img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
 }
-.slide-review-container{
-    width: 50%;
-    margin: 0 auto;
-}
+/* .review-main p{
+
+} */

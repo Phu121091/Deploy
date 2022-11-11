@@ -11,6 +11,9 @@ import Hot from './Hot';
 import axios from "axios";
 import SpecialTour from '../../components/SpecialTour/SpecialTour';
 import SuggestTour from '../../components/SuggestTour/SuggestTour';
+import AboutUs from './AboutUs/AboutUs';
+import Plus from './Plus/Plus';
+import Review from './Review/Review';
   
 const Home = () => {
   
@@ -46,17 +49,14 @@ const Home = () => {
 {/* hot tour */} 
         <Hot/>
 {/* Suggest tour */}
+      <AboutUs/>
 
       <SuggestTour />
-
-      <hr className='hr'/>
-      <OurStory/>
+      
+      <Plus/>
 {/* Special tour */}
       <SpecialTour />
-      <hr className='hr'/>
-      <AseanMap/>
-      <hr className='hr'/>
-      {/* <Review/> */}
+      <Review/>
       <hr className='hr'/>
       {/* <AboutUs/> */}
       

@@ -1,29 +1,29 @@
 .slide-item1{
-    background-image: url('../../data/images/banner/2.jpg');
+    background-image: url('../../data/images/banner/23.jpg');
     background-size:cover;
     background-position: center;
     animation: zoom 12s infinite;
 }
 .slide-item2{
-    background-image: url('../../data/images/banner/3.jpg');
+    background-image: url('../../data/images/banner/36.jpg');
     background-size: cover;
     background-position: center;
     animation: zoom 12s infinite;
 }
 .slide-item3{
-    background-image: url('../../data/images/banner/4.jpg');
+    background-image: url('../../data/images/banner/17.jpg');
     background-size: cover;
     background-position: center;
     animation: zoom 12s infinite;
 }
 .slide-item4{
-    background-image: url('../../data/images/banner/5.jpg');
+    background-image: url('../../data/images/banner/26.jpg');
     background-size: cover;
     background-position: center;
     animation: zoom 12s infinite;
 }
 .slide-item5{
-    background-image: url('../../data/images/banner/6.jpg');
+    background-image: url('../../data/images/banner/34.jpg');
     background-size: cover;
     background-position: center;
     animation: zoom 12s infinite;
