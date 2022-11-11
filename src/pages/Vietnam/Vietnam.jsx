@@ -1,4 +1,5 @@
 import React from "react";
+import CSSModules from "react-css-modules";
 import "./Vietnam.css";
 
 const Vietnam = () => {
@@ -27,7 +28,6 @@ const Vietnam = () => {
           <div className="space">TRUNG</div>
           <div className="space">NAM</div>
         </div>
-    
       </div>
       <div className="info-region">
         <div className="title-vietnam">
@@ -48,19 +48,122 @@ const Vietnam = () => {
         </div>
       </div>
       <div className="a0002">
-      <div className="area1">
-            <div className="about-content">
-               <div className="a0003"> Viet Nam co nhung gi? </div>
+        <div className="area1">
+          <div className="about-content">
+            <div className="a0003"> What is attractive in Vietnam? </div>
+            <div className="a0005">
+              <ul>
+                <li>
+                  <b>Area:</b> 331,211.6 km²{" "}
+                </li>
+                <li>
+                  {" "}
+                  <b>Population</b>: 85,789.6 thousand people (April 2009){" "}
+                </li>
+                <li>
+                  <b>Capital:</b> Hanoi{" "}
+                </li>
+                <li>
+                  <b>Climate:</b> Vietnam is a tropical monsoon country;{" "}
+                </li>
+                <li>
+                  <b>Terrain:</b>: The territory of Vietnam consists of 3 parts
+                  and 4 are hills;{" "}
+                </li>
+                <li>
+                  <b>Administrative units:</b> Vietnam has 63 provinces and
+                  cities.{" "}
+                </li>
+                <li>
+                  <b>Latitude:</b> 8º 02′ – 23º 23′ north{" "}
+                </li>
+              </ul>
             </div>
-            <div className="menu-area1">
-                <ul>
-                    <li> <a href="/">Info</a></li>
-                    <li> <a href="/">Weather</a></li>
-                    <li><a href="/">Destination Famous</a> </li>
-                    <li><a href="/">Place to go</a> </li>
-                </ul>       
+            <div className="a0007"> Destination Famous</div>
+            <div className="a0006">
+              <div className="scroll-box">
+                <div className="b0x1">
+                  <div className="left-box"></div>
+                  <div className="right-box">
+                    <div className="boxx-title">Ha Long</div>
+                  </div>
+                </div>
+
+                <div className="b0x1">
+                  <div className="left-box"></div>
+                  <div className="right-box">
+                    <div className="boxx-title">Ha Noi</div>
+                  </div>
+                </div>
+
+                <div className="b0x1">
+                  <div className="left-box"></div>
+                  <div className="right-box">
+                    <div className="boxx-title">Ha Long</div>
+                  </div>
+                </div>
+
+                <div className="b0x1">
+                  <div className="left-box"></div>
+                  <div className="right-box">
+                    <div className="boxx-title">Ha Noi</div>
+                  </div>
+                </div>
+
+                <div className="b0x1">
+                  <div className="left-box"></div>
+                  <div className="right-box">
+                    <div className="boxx-title">Ha Long</div>
+                  </div>
+                </div>
+
+                <div className="b0x1">
+                  <div className="left-box"></div>
+                  <div className="right-box">
+                    <div className="boxx-title">Ha Noi</div>
+                  </div>
+                </div>
+              </div>
+              <div className="explain">
+                <div className="picture-right"></div>
+                <div className="picture-right"></div>
+                <div className="picture-right"></div>
+                <div className="picture-right"></div>
+                <div className="picture-right"></div>
+                <div className="picture-right"></div>
+                <div className="picture-right"></div>
+                <div className="picture-right"></div>
+                <div className="picture-right"></div>
+                <div className="picture-right"></div>
+                <div className="picture-right"></div>
+                <div className="picture-right"></div>
+              </div>
             </div>
-         </div>
+          </div>
+          <div className="menu-area1">
+            <ul>
+              <li>
+                <a href="/">Info</a>
+              </li>
+              <li>
+                <a href="/">Destination Famous</a>
+              </li>
+              <li>
+                <a href="/">Place to go</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div className="tour-invn">
+        <div className="tour"></div>
+        <div className="tour"></div>
+        <div className="tour"></div>
+        <div className="tour"></div>
+        <div className="tour"></div>
+      </div>
+      <div className="seemore">
+        <div className="a0008"><a href="/">See More Tour In Viet Nam  </a></div> 
       </div>
     </div>
   );

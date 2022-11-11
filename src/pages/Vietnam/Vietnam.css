@@ -158,19 +158,26 @@ height: 100px;
     
 }
 .area1{
-    height: 1000px;
-    margin: 15% 0% 0 0%;
+    height: auto;
+    margin: 2% 0% 0 0%;
     display: flex;
 }
 .about-content{
-width: 80%;
+width: 70%;
 background-color: snow;
 }
 .a0003{
-    text-align: center;
+    margin-left: -23%;
+    font-size: 50px;
+    font-family: fantasy;
+}
+.a0007{
+    margin-left: -38%;
+    font-size: 50px;
+    font-family: fantasy;
 }
 .menu-area1 {
-    width: 20%;
+    width: 30%;
     background-color: snow;
     margin-top: 9%;
     border-left: double 4px darkgoldenrod;
@@ -181,10 +188,81 @@ background-color: snow;
     padding: 6% 0 0 15%;
     list-style-type: circle;
 }
-.menu-area1 > li:hover{
-    color: snow;
+.a0005{
+    padding: 5% 15% 0 15%;
 }
-
-
-
+.a0005 > ul{
+    text-align: left;
+    padding: 0 0 3% 18%;
+    font-size: large;
+}
+.a0006{
+    height: 600px;
+    padding: 0 0 3% 18%;
+    display: flex;
+}
+.scroll-box{
+    width: 50%;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    overflow-y: scroll; /* Add vertical scrollbar */
+    
+}
+.explain{
+    width: 50%;
+}
+.b0x1{
+    height: 100px;
+    margin: 1%;
+    display: flex;
+}
+.b0x1:hover{
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+.left-box{
+    width: 40%;
+    background-image: url('./../../data/images/banner/25.jpg');
+    background-size: cover;
+    border-radius: 11px;
+}
+.right-box{
+    width: 60%
+}
+.boxx-title{
+    text-align: center;
+    font-size: 30px;
+    font-family: monospace;
+    font-weight: 800;
+}
+.explain{
+    display: flex;
+    flex-wrap: wrap;
+}
+.picture-right{
+    width: 33%;
+    background-image: url('./../../data/images/banner/15.jpg');
+    background-size: cover;
+     
+}
+.tour-invn{
+display: flex;
+padding-top: 4%;
+}
+.tour{
+    padding: 2% 0 2% 0;
+    height: 350px;
+    width: 20%;
+    background-image: url('./../../data/images/banner/15.jpg');
+    background-size: cover;
+}
+.seemore{
+    height: 180px;
+    font-size: 50px;
+    font-family: 'Poppins';
+}
+.a0008{
+    margin: 6% 0 0% 30%;
+    border: solid 1px;
+    border-radius: 10px;
+    width: 40%;
+}
 
