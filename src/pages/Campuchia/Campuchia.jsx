@@ -4,8 +4,8 @@ import TourItemlist from "./../../components/TourItemlist/TourItemlist";
 import "./Campuchia.css";
 const Campuchia = () => {
   return (
-    <div className="Lao">
-      <div className="headder"></div>
+    <div className="Campuchia">
+      <div className="headder-cam"></div>
       <div className="support-1">
         <div className="title-tops"> ASIA | Campuchia </div>
         <div className="title-middle"> Campuchia </div>

@@ -4,8 +4,8 @@ import TourItemlist from "./../../components/TourItemlist/TourItemlist";
 import "./Thailan.css";
 const Thailan = () => {
   return (
-    <div className="Lao">
-      <div className="headder"></div>
+    <div className="Thailan">
+      <div className="headder-thai"></div>
       <div className="support-1">
         <div className="title-tops"> ASIA | Thailan </div>
         <div className="title-middle"> Thailan </div>
