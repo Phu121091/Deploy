@@ -9,15 +9,20 @@ a{
     color: white;
     font-weight:bold;
 }
+.link-home img{
+    height: 100% !important;
+    width: auto !important;
+}
 .header-bot{
     z-index: 2;
     position: relative;
     width: 100%;
+    height: 72px;
     background:rgb(0, 0, 1,0.5);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-left: 15%;
+    padding-left: 20px;
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 /* .header-bot a{
@@ -61,8 +66,7 @@ a{
 
 .log{
     height: 100%;
-    margin-top: 20px;
-    margin: 20px 2% 0 2%;
+    margin: auto auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -225,12 +229,13 @@ a{
     align-items: center;
     padding: 5px 10px;
 }
-.phone-container span{
+.phone-number{
     color: white;
+    font-size: 15px !important;
 }
 
 #show{
-    top:100%;/* right:100%; */
+    top:100%;
     position: absolute;
     transition: 0.5s;
 }
@@ -254,5 +259,93 @@ a{
     background:rgb(4, 4, 4,0.5);;
     border-bottom:1px solid gray;
     color: white;  
+    
+}
+.icon-list-mobile{
+    color: white;
+    font-size: 30px;
+    display: none;
+    margin: auto ;
+    margin-right: 0;
+    width: 15%;
+}
+
+/*Reponsive   */                      
+
+@media screen and (max-width: 1120px) {
+.header-bot a{
+    font-size: 10px;
+    justify-content: flex-end;
+}
+.phone-find-container{
+    margin: 0;
+}
+.phone-number{
+    font-size:12px !important;
+}
+}
+
+@media only screen and  (max-width: 850px) {
+.menu{ 
+    display: none !important;
+    }
+    .log-container{
+        display: none;
+    }
+    #showfind{
+        display: none;
+    }
+    .phone-find-container{
+        flex-direction: row;
+    }
+    .phone-container{
+        margin: auto;
+    }
+    .find-container{
+        margin: auto;
+    }
+    .log{
+        display: none;
+    }
+    .icon-list-mobile{
+        display: block;
+    }
+}
+   
+.menu-mobile{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    justify-content: center;
+    align-items: flex-start;
+    position: absolute;
+    transition: 1s;
+}
+.menu-mobile div{
+    /* height: 0px; */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.menu-mobile a{
+    /* height: 20px; */
+    padding:0 10px;
+    text-align: start;
+    cursor: pointer;
+    font-size: 12px;
+    transition: 0.5s;
+    background-color: rgb(0, 0, 0,0.5);
+    
+}
+.title-mobile{
+    width: 100%;
+    text-align: start;
+    margin: 0px;
+    padding: 10px;
+    color: white;
+    border-bottom :0.5px solid silver ;
+    border-top:0.5px solid silver ;
+    background-color: rgb(0, 0, 0,0.7);
     
 }

@@ -14,8 +14,8 @@ const Lao = () => {
           The land of thousands of objects - The land of millions of elephants{" "}
         </div>
       </div>
-      <TourItemlist status="rev" />
-      <TourItemlist status="norev" />
+      {/* <TourItemlist status="rev" />
+      <TourItemlist status="norev" /> */}
       <div className="title-middle"> Hightlight of Laos</div>
       <div className="piture-lao">
         <div className="pictulao"></div>

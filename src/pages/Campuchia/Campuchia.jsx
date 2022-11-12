@@ -13,8 +13,8 @@ const Campuchia = () => {
           Country of Pagodas and Towers{" "}
         </div>
       </div>
-      <TourItemlist status="rev" />
-      <TourItemlist status="norev" />
+      {/* <TourItemlist status="rev" />
+      <TourItemlist status="norev" /> */}
       <div className="title-middle"> Hightlight of Campuchia</div>
       <div className="piture-lao">
         <div className="pictulao"></div>

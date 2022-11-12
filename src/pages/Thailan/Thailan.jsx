@@ -13,8 +13,8 @@ const Thailan = () => {
           Land of the Golden Temple{" "}
         </div>
       </div>
-      <TourItemlist status="rev" />
-      <TourItemlist status="norev" />
+      {/* <TourItemlist status="rev" />
+      <TourItemlist status="norev" /> */}
       <div className="title-middle"> Hightlight of Thailan</div>
       <div className="piture-lao">
         <div className="pictulao"></div>

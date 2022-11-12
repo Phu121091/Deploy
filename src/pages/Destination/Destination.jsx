@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import "./Vietnam.css";
 
-const Vietnam = () => {
+const Destination = () => {
   const [slide, setSlide] = useState(1);
 
   const handleSlider = () => {
@@ -210,4 +210,4 @@ const Vietnam = () => {
   );
 };
 
-export default Vietnam;
+export default Destination;
