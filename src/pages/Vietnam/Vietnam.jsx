@@ -1,8 +1,27 @@
 import React from "react";
+import { useState } from "react";
 import CSSModules from "react-css-modules";
 import "./Vietnam.css";
 
 const Vietnam = () => {
+  const [slide, setSlide] = useState(1);
+
+  const handleSlider = () => {
+    if(slide === 1) {
+      setTimeout(() => {
+        setSlide(slide + 1)
+      }, 3000)
+    } else if(slide === 2) {
+      setTimeout(() => {
+        setSlide(slide + 1)
+      }, 3000)
+    } else if (slide === 3) {
+      setTimeout(() => {
+        setSlide(1)
+      }, 3000)
+    }
+  }
+
   return (
     <div>
       <div className="header-vietnam">
@@ -24,9 +43,15 @@ const Vietnam = () => {
           </div>
         </div>
         <div className="picture-area">
-          <div className="space">BAC</div>
-          <div className="space">TRUNG</div>
-          <div className="space">NAM</div>
+          <div className="space">
+            <div className="space-title">Northern</div>
+          </div>
+          <div className="space">
+            <div className="space-title">Central</div>
+          </div>
+          <div className="space">
+            <div className="space-title">South</div>
+            </div>
         </div>
       </div>
       <div className="info-region">
@@ -125,18 +150,34 @@ const Vietnam = () => {
                 </div>
               </div>
               <div className="explain">
-                <div className="picture-right"></div>
-                <div className="picture-right"></div>
-                <div className="picture-right"></div>
-                <div className="picture-right"></div>
-                <div className="picture-right"></div>
-                <div className="picture-right"></div>
-                <div className="picture-right"></div>
-                <div className="picture-right"></div>
-                <div className="picture-right"></div>
-                <div className="picture-right"></div>
-                <div className="picture-right"></div>
-                <div className="picture-right"></div>
+                <div className="city-info">
+                  <ul>
+                    <li>
+                      <b>Area:</b> 3.324,92 km2.{" "}
+                    </li>
+                    <li>
+                      {" "}
+                      <b>Population</b>: More 8.5 million people(02/2022).{" "}
+                    </li>
+                    <li>
+                      <b>Climate:</b> Tropical monsoon.{" "}
+                    </li>
+                    <li>
+                      <b>Consists:</b>: 12 districts, 1 town and 17 districts.{" "}
+                    </li>
+                    <li>
+                      <b>Characteristics:</b> economic, political, cultural, scientific center{" "}
+                    </li>
+                    <li>
+                      <b>Latitude:</b> 20°53' to 21°23' North latitude and 105°44' to 106°02' East longitude{" "}
+                    </li>
+                  </ul>
+                </div>
+                <div className="city-images" onLoad={handleSlider()}>
+                  {slide === 1 && <img className="city-img" src="https://vietnam.travel/sites/default/files/styles/top_banner/public/2017-06/vietnam-travel-5.jpg?itok=XVnHP3ty" alt="" />}
+                  {slide === 2 && <img className="city-img" src="https://www.pacificairlines.com/wp-content/uploads/2020/07/Web-banner_web2-min.png" alt="" />}
+                  {slide === 3 && <img className="city-img" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/33/f7/12/caption.jpg?w=700&h=-1&s=1" alt="" />}
+                </div>
               </div>
             </div>
           </div>
