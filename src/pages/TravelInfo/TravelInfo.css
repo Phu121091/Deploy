@@ -5,7 +5,7 @@
   flex-wrap: wrap;
   width: 100%;
   padding: 0;
-  margin: 25px 0 0 0;
+  margin: 0;
 }
 
 .banner-info {
@@ -50,11 +50,19 @@
 }
 
 .banner-security {
+  color: white;
   font-size: 20px;
   font-weight: 400;
+  margin: 0;
+}
+
+.banner-like {
+  color: #fff;
+  font-size: 40px;
 }
 
 .banner-price {
+  color: white;
   font-size: 16px;
   font-weight: 400;
 }
@@ -94,10 +102,12 @@ div > span:nth-child(2) {
 .banner-arrow {
   display: flex;
   align-items: center;
-  font-size: 24px;
+  font-size: 55px;
+  font-weight: 400;
+  color: #333;
 }
 
-.travel-address {
+.tour-address {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
@@ -131,6 +141,11 @@ div > span:nth-child(2) {
   align-items: center;
 }
 
+.local-icon {
+  align-items: center;
+  font-size: 24px;
+}
+
 .local-list > a {
   color: black;
   font-family: Montserrat, Arial, sans-serif;
@@ -161,14 +176,19 @@ div > span:nth-child(2) {
   overflow-x: hidden;
   align-items: center;
   justify-content: center;
-  /* width: 1010px; */
   margin: 40px 0 40px 0;
   scroll-behavior: auto;
+  /* width: 1010px; */
 }
 
 .slick-slide {
   padding: 10px;
   text-align: center;
+}
+
+.slider-move {
+  font-size: 20px;
+  color: #d4d4d4;
 }
 
 .address {
@@ -238,17 +258,24 @@ div > span:nth-child(2) {
 }
 
 .icon-font {
+  border: 2px solid #d4d4d4;
+  border-radius: 50%;
   color: #c3bdbd;
+  padding: 4px;
+  transition: 0.3s;
 }
 
 .icon-tooltip > span {
   display: none;
 }
 
-.iconfont:hover {
+.icon-font:hover {
   text-decoration: none;
   opacity: 0.8;
   color: #d0b316;
+  border: 2px solid #d0b316;
+  border-radius: 50%;
+  transition: 0.3s;
 }
 
 .paragraph {
@@ -282,7 +309,375 @@ div > span:nth-child(2) {
   height: 1px;
   display: block;
   background-color: #d0b316;
-  margin: 15px auto 20px;
+  margin: 15px auto 40px;
   content: "";
   width: 40%;
+}
+
+.inclusions-detail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 250px;
+  margin-bottom: 40px;
+}
+
+.inclusions-accomodation,
+.inclusions-transport,
+.inclusions-team,
+.inclusions-meals,
+.inclusions-experiences,
+.inclusions-services {
+  display: flex;
+  justify-content: center;
+  font-family: "Montserrat", Arial, sans-serif;
+  width: 30%;
+  border: 1px solid #c3bdbd;
+  padding: 20px 20px 12px 10px;
+  margin: 0 16px 0 8px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.inclusions-accomodation:hover,
+.inclusions-transport:hover,
+.inclusions-team:hover,
+.inclusions-meals:hover,
+.inclusions-experiences:hover,
+.inclusions-services:hover {
+  box-shadow: 1px 1px 1px 2px #bbbbbb45;
+  transition: 0.5s;
+}
+
+.accomodation-note,
+.transport-note,
+.team-note,
+.meals-note,
+.experiences-note,
+.services-note {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 35%;
+  color: #555555;
+}
+
+.accomodation-note:after,
+.transport-note:after,
+.team-note:after,
+.meals-note:after,
+.experiences-note:after,
+.services-note:after {
+  max-width: 200px;
+  width: 100%;
+  height: 1px;
+  display: block;
+  background-color: #d0b316;
+  content: "";
+}
+
+.accomodation-note span,
+.transport-note span,
+.team-note span,
+.meals-note span,
+.experiences-note span,
+.services-note span {
+  font-size: 12px !important;
+}
+
+.accomodation-icon,
+.transport-icon,
+.team-icon,
+.meals-icon,
+.experiences-icon,
+.services-icon {
+  flex-direction: column;
+  font-size: 18px;
+  color: #9b9595;
+  margin: 0;
+}
+
+.accomodation-more,
+.transport-more,
+.team-more,
+.meals-more,
+.experiences-more,
+.services-more {
+  display: flex;
+  flex-direction: column;
+  color: #111111;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  padding-left: 12px;
+}
+
+.accomodation-more a,
+.transport-more a,
+.team-more a,
+.meals-more a,
+.experiences-more a,
+.services-more a {
+  font-size: 12px;
+  line-height: 17px;
+  font-weight: 500;
+  color: #c3bdbd;
+}
+
+.tour-highlights {
+  align-items: center;
+  background-color: #f6f4f0;
+  width: 100%;
+  height: 610px;
+  margin-bottom: 24px;
+  padding: 55px 50px 60px 80px;
+}
+
+.tour-highlights h2 {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 22px;
+  line-height: 29px;
+  font-weight: 400;
+  color: #000000;
+  margin-bottom: 40px;
+}
+
+.highlight-line:after {
+  max-width: 200px;
+  height: 1px;
+  display: block;
+  background-color: #d0b316;
+  margin: 15px auto 40px;
+  content: "";
+  width: 40%;
+}
+
+.hightlight-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tour-intro {
+  width: 50%;
+}
+
+.tour-intro img {
+  width: 535px;
+  height: 210px;
+  padding-bottom: 12px;
+}
+
+.tour-highlight {
+  margin-left: 30px;
+}
+
+.tour-highlight ul {
+  display: block;
+  list-style: none;
+  float: left;
+}
+
+.tour-highlight ul li {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #111111;
+  text-align: left;
+  padding-bottom: 12px;
+}
+
+.tour-highlight-check {
+  margin-right: 12px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #d0b316;
+}
+
+.tour-highlight span {
+  font-size: 14px !important;
+  color: #9b9595;
+  text-align: left;
+  float: left;
+  cursor: pointer;
+}
+
+.your-choice {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 124px;
+}
+
+.your-choice h2 {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.yourchoice-line:after {
+  max-width: 200px;
+  height: 1px;
+  display: block;
+  background-color: #d0b316;
+  margin: 15px auto 40px;
+  content: "";
+  width: 40%;
+}
+
+.tour-choices {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tour-choice {
+  height: 100%;
+  width: 388px;
+}
+
+.tour-option {
+  background-color: #96a089;
+  height: 74px;
+}
+
+.tour-option p {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.tour-choice--detail {
+  background-color: #eeeeee;;
+}
+
+.tour-choice--detail ul {
+  list-style: none;
+  padding: 38px 52px 30px 50px;
+  margin: 0;
+}
+
+.tour-choice--detail ul li {
+  line-height: 30px;
+  padding-bottom: 12px;
+  font-size: 14px;
+}
+
+.icon-choice {
+  color: #d0b316;
+  margin-right: 4px;
+}
+
+.tour-enquire {
+  background-color: #96a089;
+  height: 65px;
+}
+
+.tour-enquire p {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.tour-option-re {
+  background-color: #d0b316;
+  height: 98px;
+}
+
+.tour-option-re p {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.tour-enquire-re {
+  background-color: #d0b316;
+  height: 65px;
+}
+
+.tour-enquire-re p {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.tailormade {
+  margin-top: 65px;
+  width: 100%;
+}
+
+.tailormade-team {
+  align-items: center;
+  justify-content: center;
+}
+
+.tailormade-img {
+  margin-bottom: 12px;
+}
+
+.tailormade-img img{
+  width: 80px;
+  height: 80px;
+  margin-right: 12px;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
+.tailormade-title {
+  font-family: "Reenie Beanie", cursive;
+  font-size: 28px;
+  font-weight: 400;
+  color: #111111;
+}
+
+.tailormade-contact {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  width: 450px;
+  background-color: #d0b316;
+  padding: 12px 0;
+}
+
+.tailormade-mail {
+  margin-top: 2px;
+  margin-right: 12px;
+}
+
+.tailormade-contact a {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+
+.contact-yourfriend {
+  margin-top: 50px;
 }

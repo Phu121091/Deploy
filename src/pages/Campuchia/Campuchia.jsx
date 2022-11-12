@@ -1,5 +1,4 @@
 import React from 'react'
-import CSSModules from "react-css-modules";
 import TourItemlist from "./../../components/TourItemlist/TourItemlist";
 import "./Campuchia.css";
 const Campuchia = () => {
