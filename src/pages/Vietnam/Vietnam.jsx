@@ -1,6 +1,5 @@
 import React from "react";
 import { useState } from "react";
-import CSSModules from "react-css-modules";
 import "./Vietnam.css";
 
 const Vietnam = () => {
