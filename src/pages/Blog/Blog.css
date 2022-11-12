@@ -1,0 +1,74 @@
+.main-blog {
+    height: auto;
+}
+.blog-container {
+    width: 85%;
+    margin: 0 0 0 7%;
+}
+.title-blogmain {
+    text-align: center;
+    font-size: 55px;
+    font-family: "Dancing Script";
+    color: rgb(15, 12, 12);
+}
+.midlle-topblog {
+    height: 550px;
+    background-size: cover;
+    background-image: url("https://cdn.shopify.com/s/files/1/0165/7044/files/about_image.png?v=1666053558");
+}
+.bot-topblog {
+    width: 85%;
+    margin: 0 0 0 7%;
+}
+.bottom-title {
+    padding: 1% 0 0 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-family: adobe-garamond-pro, serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.text-area {
+    font-family: adobe-caslon-pro, serif !important;
+    font-weight: 400 !important;
+    font-style: normal;
+    letter-spacing: 0.03em;
+    font-size: 1.5rem !important;
+    color: #454545 !important;
+    font-style: italic;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0% auto;
+    display: block;
+    padding: 1em 0;
+}
+.tag-choice {
+    display: flex;
+    flex-wrap: wrap;
+}
+.button-blog {
+    width: 15%;
+    text-decoration-line: underline;
+    font-size: 17px;
+    font-weight: 600;
+}
+.layer-middle {
+    width: 85%;
+    margin: 0 0 0 7%;
+    display: flex;
+}
+.layerblog-middle {
+    width: 85%;
+    margin: 0 0 0 7%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.title-middle {
+    font-family: monospace;
+    font-size: 55px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-style: normal;
+    padding: 5% 0 1% 0;
+}

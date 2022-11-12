@@ -1,8 +1,9 @@
 import React from 'react'
+import './Slogan.css'
 
 const Slogan = () => {
   return (
-    <div className='slogan'>Slogan</div>
+    <div></div>
   )
 }
 

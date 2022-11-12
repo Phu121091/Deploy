@@ -1,14 +1,30 @@
+.main-review{
+    background-color: #bcac850f;
+    padding: 3% 0 2% 0;
+}
+.title-blog{
+    font-size: 55px;
+    font-family: 'Dancing Script';
+}
+.sub-title{
+    font-size: 20px;
+    text-decoration: underline;
+    font-family: 'Mukta';
+}
 .review{
-    background-color: rgb(188, 172, 133);
-    padding: 3% 0;
+    display: flex;
 }
 .review-main{
-    margin: 5% auto;
+    margin: 5% 1% 0 1%;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 70%;
-    
+    width: 33%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 1%;
+}
+.review-main > p{
+    font-family: 'Mukta';
 }
 .review-img img{
     width: 300px;

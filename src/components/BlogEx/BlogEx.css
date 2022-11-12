@@ -1,0 +1,41 @@
+
+.blog-exmain{
+    width: 45%;
+    margin: 1%;
+    border: solid 1px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.titlle-blog{
+    text-align: left;
+    font-size: 30px;
+    padding: 1% 0 0 4%;
+    border-bottom: solid 1px;
+    color: azure;
+    background-color: #828181;
+}
+.head-blog{
+    display: flex;
+    flex-wrap: wrap;
+}
+.post-blog{
+    width: 48%;
+    margin: 1%;
+}
+.link-post{
+    border: solid 1px;
+    border-radius: 8px;
+}
+.image-post{
+    margin: 1% 0 1% 0;
+}
+.image-post > img {
+    width: 90%;
+    height: auto;
+}
+.text-post{
+    padding: 7%;
+}
+.iconlink{
+    margin-bottom: -3px;
+}

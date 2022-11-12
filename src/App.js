@@ -21,14 +21,13 @@ import LogIn from "./pages/LogIn/LogIn";
 import SignUp from "./pages/SignUp/SignUp";
 import ShopInfor from "./pages/ShopInfor/ShopInfor";
 import TravelInfo from "./pages/TravelInfo/TravelInfo";
-import Feedback from "./pages/Home/Feedback/Feedback";
 import TripFinder from "./pages/TripFinder";
 import Vietnam from "./pages/Vietnam/Vietnam";
 import Lao from "./pages/Laos/Lao";
 import Campuchia from "./pages/Campuchia/Campuchia";
 import Thailan from "./pages/Thailan/Thailan";
-
-
+import Blog from "./pages/Blog/Blog";
+import CustomerFeedback from "./pages/CustomerFeedback/CustomerFeedback";
  
 function App() {
 
@@ -50,7 +49,6 @@ function App() {
       <Route path="/SignUp" element={<SignUp />} />
       <Route path="/ShopInfor" element={<ShopInfor />} />
       <Route path="/TravelInfo" element={<TravelInfo />} />
-      <Route path="/Feedback" element={<Feedback />} />
       <Route path="/Luxury" element={<Luxury />} />
       <Route path="/Mice" element={<MICE />} />
       <Route path="/Heritages" element={<Heritages />} />
@@ -60,6 +58,8 @@ function App() {
       <Route path='/Lao' element={<Lao/>}/>
       <Route path='/Thailan' element={<Thailan/>}/>
       <Route path='/Campuchia' element={<Campuchia/>}/>
+      <Route path='/Blog' element={<Blog/>}/>
+      <Route path='/CustomerFeedback' element={<CustomerFeedback/>}/>
       </Routes>
       </Layout> 
       </BrowserRouter>

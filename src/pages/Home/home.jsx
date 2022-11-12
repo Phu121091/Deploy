@@ -3,19 +3,16 @@ import { useEffect,useState } from 'react';
 import 'react-slideshow-image/dist/styles.css';
 import './home.css';
 import SlideBig from './Slide';
-import Blockgrid from '../../components/Blockgrid/Blockgrid';
 import Whychoose from './Whychoose/Whychoose';
-import AseanMap from './AseanMap/AseanMap';
-import OurStory from './Ourstory/Ourstory';
 import Hot from './Hot';
-import axios from "axios";
 import SpecialTour from '../../components/SpecialTour/SpecialTour';
 import SuggestTour from '../../components/SuggestTour/SuggestTour';
 import AboutUs from './AboutUs/AboutUs';
 import Plus from './Plus/Plus';
 import Review from './Review/Review';
 import Bloglist from './Review/Bloglist/Bloglist';
-  
+import Slogan from './Slogan/Slogan';
+import Feedback from './Feedback/Feedback';
 const Home = () => {
   
 //   const [sellList, setSellList] = useState([]);
@@ -47,22 +44,18 @@ const Home = () => {
         <div className="slide-container">
           <SlideBig/>
         </div>
-{/* hot tour */} 
-        <Hot/>
-{/* Suggest tour */}
-      <AboutUs/>
 
+      <Hot/>
+      <AboutUs/>
       <SuggestTour />
-      
       <Plus/>
-{/* Special tour */}
       <SpecialTour />
       <Review/>
+      <Feedback/>
       <Bloglist/>
-      {/* <AboutUs/> */}
-      
+      <Slogan/>
       <Whychoose/>
-
+      
     </div>
   )
 }

@@ -154,7 +154,7 @@ const Header = () => {
       <IoIosArrowDown/>
       <div className="list-hidden list-2">
         <Link to='/Blog'>BLOG</Link>
-        <Link to='/Feedback'>FEEDBACK</Link>
+        <Link to='/CustomerFeedback'>FEEDBACK</Link>
       </div>
       </div>
     </div>
