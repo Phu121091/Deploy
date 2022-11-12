@@ -1,26 +1,23 @@
 import React from "react";
-import "./Family.css";
-import { RiMoneyDollarCircleLine, Ri24HoursFill } from "react-icons/ri";
+import "../../TravelStyle/TravelStyle.css"
 import TourItemlist from "../../../components/TourItemlist/TourItemlist";
 
 const Family = () => {
   return (
     <div className="body-family">
-      <div className="family-content">Family</div>
-      <div className="detail-family">
+      <div className="travelstyle-content">Family</div>
+      <div className="detail-travelstyle">
         {" "}
         A house is built by hands, but a home is built by heart.{" "}
       </div>
-      <div className="family-container">
+      <div className="travelstyle-container">
       <div className="page-up">
           <div className="title-top"> See The World Together</div>
           <div className="middle-page"> 
-          We don’t believe “let’s have kids” should mean you have to stop exploring the world.
-           We also don’t believe you should get home from a holiday just as tired as when you left.
-            So we have real parents at B&R design and test-drive everything.
-             Our resulting journeys get rave reviews from young and young-at-heart people alike.
-              Nothing’s dumbed-down, everything’s 100% stress-free, 
-              and there’s always as much action and excitement as the kids can handle.
+            Unlike all other countries in the world. 
+            The diversity of weather, geography, culture, cuisine, religion among regions. 
+            That creates a mysterious and exciting Vietnam and is a trending trend of family travel programs. 
+            Generations in a family have their own experience and enjoyment of each tailor-made program.
           </div>
           <div className="end-page"> Look By Eyes- Feel By Heart </div>
         </div>

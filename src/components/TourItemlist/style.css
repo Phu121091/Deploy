@@ -1,101 +1,277 @@
 .simpletour-1 {
-    height: auto;
-    background-color: #fff1e100;
-    width: 85%;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
-    margin: 3% 0 0 6%;
-    border-radius: 6px;
-    position: relative;
-    
-}
-.text-highlight {
-    height: auto;
-    width: 94%;
-    margin: 0 0 0 3%;
-    border-radius: 6px;
-    padding: 3% 0 2% 0;
-}
-.top-container{
-    overflow: hidden;
-    
-}
-.nor .top-container{
-    display: flex ;
-    flex-direction: row;
-}
-.rev .top-container{
-    display: flex ;
-    flex-direction: row-reverse;
-}
-.box-1:hover{
-    transform: scale(1.2);
-    
+  height: auto;
+  background-color: #fff1e100;
+  width: 85%;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  margin: 3% 0 0 6%;
+  border-radius: 6px;
+  position: relative;
 }
 
-.boxsub-1{
-    height: auto;
-    width: 60%;
+.simpletour-1 hr {
+  width: 95%;
+  margin: 8px;
+  margin-left: 30px;
+  left: 0;
+  right: 0;
 }
-.box-1{
-    height: auto;
-    background-image: url('../../data/images/banner/16.jpg');
-    background-size: cover;
-    width: 40%;
-    background-position: center;
-    transition: 1s;
+
+.top-container {
+  display: flex;
+  overflow: hidden;
 }
-.title-box{
-    text-align: center;
-    font-family: 'Lobster', cursive;
-    font-size: 35px;
-    padding: 3% 0 3% 0;
+
+.box-1 {
+  width: 428px;
+  height: 360px;
+  overflow: hidden;
+  margin: 24px 24px 0 12px;
 }
-.title-highlight{
-    text-align: left;
-    padding: 0 6% 0 12%;
+
+.box-img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  transition: 1s;
 }
+
+.box-img:hover {
+  transform: scale(1.2);
+}
+
+.boxsub-1 {
+  height: auto;
+  width: 60%;
+}
+
+.tour-info {
+  display: flex;
+  align-items: center;
+  margin-left: 75px;
+}
+
+.day-length {
+  display: flex;
+  align-items: center;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 14px;
+}
+
+.day-length span {
+  font-size: 14px !important;
+}
+
+.icon-length {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  margin-right: 8px;
+}
+
+.title-box {
+  text-align: center;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 35px;
+  padding: 3% 0 3% 5%;
+}
+
+.title-box:hover {
+  color: #d0b316;
+  transition: 1s;
+}
+
+.title-highlight {
+  text-align: left;
+  padding: 0 6% 0 12%;
+}
+
+.highlight li {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #666666;
+}
+
 .read-more {
-   display: flex;
-   padding: 1% 0 2% 0;
+  display: flex;
+  padding: 1% 0 2% 0;
 }
-.icon-show{
-    width: 70%;
-    padding: 0 0 0 12%;
-    text-align: left;
-    font-size: 20px;
-    font-family: 'Lobster';
+
+.icon-show {
+  width: 70%;
+  padding: 0 0 0 12%;
+  text-align: left;
+  font-size: 20px;
+  font-family: "Lobster";
 }
+
+.money {
+  display: flex;
+  align-items: center;
+}
+
+.money-icon {
+  font-size: 28px;
+}
+
+.tour-price {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  padding-left: 12px;
+}
+
+.tour-price b {
+  font-size: 18px;
+}
+
+.tour-journeys {
+  display: flex;
+  align-items: center;
+}
+
+.journeys-map {
+  font-size: 24px;
+  margin: 0 4px 0 3px ;
+}
+
+.journeys-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.journeys-list li {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 12px;
+}
+
+.journeys-list li:hover {
+    color: #d0b316;
+    cursor: pointer;
+}
+
 .button-show {
-    width: 30%;
+  width: 30%;
 }
-.money:hover,.day-lenght:hover{
-    color: darkgoldenrod;
+
+.bottom-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 24px 12px 24px;
+  margin: 0px 20px 0 20px;
+  font-family: "Montserrat", Arial, sans-serif;
 }
-.highlight li:hover{
-    color: darkgoldenrod;
-    transform: scale(1.1);
-    transition: 1s;
-    
+
+.handpick {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+  color: #888888;
 }
+
+.handpick-list {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 50px;
+}
+
+.handpick-title {
+  display: none;
+  align-items: center;
+  background-color: #d0b316;
+  font-size: 12px;
+  color: #fff;
+  padding: 4px;
+  border-radius: 5px;
+  margin-top: -30px;
+  margin-bottom: 5px;
+  margin-left: 20px;
+}
+
+.handpick-icon {
+  height: 22px;
+  width: 22px;
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.handpick-icon:hover {
+  color: #d0b316;
+  transition: 0.5s;
+}
+
+.handpick-list:hover .handpick-title {
+  display: block;
+  transition: 0.5s;
+}
+
+.tour-explore {
+  display: flex;
+  align-items: center;
+  right: 0;
+}
+
+.tour-explore:hover {
+  color: #d0b316;
+}
+
+.tour-explore a {
+  font-size: 14px;
+  font-weight: 400;
+  color: #888888;
+  padding: 8px 20px 8px 20px;
+  margin-right: 30px;
+  border: 1px solid #888888;
+  border-radius: 25px;
+}
+
+.tour-explore a:hover {
+  color: #d0b316;
+  border: 1px solid #d0b316;
+}
+
+.tour-heart {
+  font-size: 24px;
+  color: #888888;
+}
+
+.tour-heart:hover {
+  color: #d0b316;
+}
+
 @keyframes toleft {
-    0%{
-      left:20%;
-    }
-    100%{
-        left: 0%;
-    }
+  0% {
+    left: 20%;
+  }
+  100% {
+    left: 0%;
+  }
 }
 @keyframes toright {
-    0%{
-      left:-20%;
-    }
-    100%{
-        left: 0%;
-    }
+  0% {
+    left: -20%;
+  }
+  100% {
+    left: 0%;
+  }
 }
-.rev{
-    animation: toleft 5s forwards;
+.rev {
+  animation: toleft 5s forwards;
 }
-.norev{
-    animation: toright 5s forwards;
+.norev {
+  animation: toright 5s forwards;
 }
