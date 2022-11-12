@@ -11,6 +11,9 @@ const contentStyle = {
 }
 
 const SlideBig = () => {
+
+  console.log(window.screen.width);
+
   return (
     <Carousel effect="fade" autoplay duration='5s'>
     <div>

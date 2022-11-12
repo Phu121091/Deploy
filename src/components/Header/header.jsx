@@ -7,8 +7,12 @@ import { UserContext } from '../Layout';
 import {IoIosArrowDown ,IoIosArrowForward} from 'react-icons/io';
 import {FaSearchLocation,FaPhoneAlt} from 'react-icons/fa';
 import {BiPaperPlane} from 'react-icons/bi';
+import {BsList} from 'react-icons/bs';
 import Search from "../Find/Search";
 import Buttontop from "../ButtonTop/Buttontop";
+import Stylist from "../../data/stylelist.json";
+import Logo from './logo-alt.png';
+import MobileMenu from "./MobileMenu";
 
 
 
@@ -20,6 +24,7 @@ const Header = () => {
 
   const user = useContext(UserContext);
   console.log(user);
+  console.log(Stylist);
 
   const navigate = useNavigate();
   const location = useLocation();
@@ -43,11 +48,16 @@ const Header = () => {
   const Showlog = () => {
     showlog==='show'?setshowlog('hidden'):setshowlog('show')
   }
+// Show menu mobile
+  const [showmobile,setshowmobile] =useState('-100%')
+  const Showlist = () => { (showmobile=='-100%')?setshowmobile('0%'):setshowmobile('-100%') }
+  
 
   return (
     <div className="header">
 
       <div className="header-bot">
+        <Link to='/' className="link-home"><img src={Logo}/></Link>
       <div className="menu">
         <div className="menu-li" id='list1'>
       <NavLink to="/" id={handleActive} className='link-f'>
@@ -56,7 +66,7 @@ const Header = () => {
       <IoIosArrowDown/>
       <div className="list-hidden list-1">
         <div className="list-country">
-        <Link to="/Vietnam">Viet Nam</Link>
+        <Link to="/Destination/Vietnam">Viet Nam</Link>
         <div className="list-mini">
         <Link>Ha Noi</Link>
         <Link>SaPa - Lao Cai</Link>
@@ -72,7 +82,7 @@ const Header = () => {
         </div>
 
         <div className="list-country">
-        <Link to="/Lao">Lao</Link>
+        <Link to="/Destination/Lao">Lao</Link>
         <div className="list-mini">
         <Link>Luang Prabang</Link>
         <Link>Viang Chan</Link>
@@ -80,7 +90,7 @@ const Header = () => {
         </div>
 
         <div className="list-country">
-        <Link to="/Thailan">Thai Lan</Link>
+        <Link to="/Destination/Thailan">Thai Lan</Link>
         <div className="list-mini">
         <Link>Bangkok</Link>
         <Link>Koh Panyee</Link>
@@ -89,7 +99,7 @@ const Header = () => {
         </div>
 
         <div className="list-country">
-        <Link to="/Campuchia">Campuchia</Link>
+        <Link to="/Destination/Campuchia">Campuchia</Link>
         <div className="list-mini">
         <Link>Angkor Wat, Angkor Thom</Link>
         <Link>Phnom Penh</Link>
@@ -108,10 +118,10 @@ const Header = () => {
         <Link to='/Classic'>CLASSIC</Link>
         <Link to='/Family'>FAMILY</Link>
         <Link to='/Beach'>BEACH</Link>
-        <Link to='ShortTrips'>SHORT TRIPS</Link>
+        <Link to='Short trip'>SHORT TRIPS</Link>
         <Link to='Culinary'>CULINARY</Link>
         <Link to='Adventure'>ADVENTURE</Link>
-        <Link to='Cruises'>CRUISES</Link>
+        <Link to='Cruise'>CRUISES</Link>
       </div>
       </div>
 
@@ -125,7 +135,7 @@ const Header = () => {
         <Link to='/Welles'>WELLES</Link>
         <Link to='/Mice'>M.I.C.E</Link>
         <Link to='/Luxury'>LUXURY</Link>
-        <Link to='/Heritages'>HERITAGES</Link>
+        <Link to='/Heritage'>HERITAGES</Link>
         <Link to='/Reponsible'>REPONSIBLE TRAVEL</Link>
       </div>
       </div>
@@ -166,13 +176,13 @@ const Header = () => {
         </div>
         <div className="phone-container">
           <FaPhoneAlt className="header-icon"/>
-          <span>03.548.65073</span>
+          <span className="phone-number">03.548.65073</span>
         </div>
 
       </div>
-      <Link to='/ShopInfor' className="tour-shoped-icon">
+      {/* <Link to='/ShopInfor' className="tour-shoped-icon">
       <BiPaperPlane/><span>{user.shoped.length}</span>
-      </Link>
+      </Link> */}
       
       { user.username ?
       (
@@ -194,7 +204,7 @@ const Header = () => {
         
       )
       }     
-
+      <BsList className="icon-list-mobile" onClick={()=>Showlist()}/>
       <Buttontop/>
       </div>
 
@@ -204,7 +214,8 @@ const Header = () => {
         <Link to='/LogIn' className="log-link">Log in</Link>
         <Link to='/SignUp' className="log-link">Register</Link>
       </div>
-    
+
+      <MobileMenu showmobile={showmobile}/>
     
     </div>
   )

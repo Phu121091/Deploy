@@ -8,11 +8,11 @@ import { RiMoneyDollarCircleLine, Ri24HoursFill } from "react-icons/ri";
 import './style.css';
 import Img1 from '../../data/images/banner/16.jpg';
  
-const TourItemlist = ({status}) => {
+const TourItemlist = ({status,data}) => {
 
 
   return (
-    <div className={`simpletour-1 ${status}`}>
+    <div className={`simpletour-1 ${status}`} key={data.id}>
           <div className='top-container'>
             <div className="box-1">
               <img className='box-img' src={Img1} alt="" />
@@ -21,13 +21,15 @@ const TourItemlist = ({status}) => {
               <div className='tour-info'>
                 <div className="day-length">
                     <Ri24HoursFill className='icon-length'/>
-                    <span>12 Days</span>
+                    <span>{data.itinerary.length} day</span>
                 </div>
-                <div className="title-box">HA LONG 12 DAY - 11 NIGHT</div>
+                <div className="title-box">{data.title}</div>
               </div>
               <div className="title-highlight">
+                
                 <ul className="highlight">
-                  <li>
+                  {data.highlight.map((d)=><li>{d}</li>)}
+                  {/* <li>
                     {" "}
                       We'll see that in Hanoi's lovely Old Quarter, where the city's hectic rhythm may be experienced.{" "}
                   </li>
@@ -46,14 +48,14 @@ const TourItemlist = ({status}) => {
                   <li>
                     {" "}
                     Get the chance to learn about a fun itinerary and take part in a lot of activities with locals, on Tan Phong island.{" "}
-                  </li>
+                  </li> */}
                 </ul>
               </div>
               <div className="read-more">
                 <div className="icon-show">
                   <div className="money">
                     <RiMoneyDollarCircleLine className='money-icon'/> 
-                    <span className='tour-price'>ONLY FROM <b>$3358 </b>PP</span>
+                    <span className='tour-price'>ONLY FROM <b>{data.price} </b>PP</span>
                   </div>
                   <div className="tour-journeys">
                     <SiGooglestreetview className='journeys-map'/>
