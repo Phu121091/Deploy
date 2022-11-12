@@ -1,8 +1,10 @@
-import { BsFillTreeFill, BsHeart } from 'react-icons/bs';
+import { BsCheck2, BsFillTreeFill, BsHeart, BsPeopleFill } from 'react-icons/bs';
 import { MdFoodBank, MdKayaking, MdKeyboardArrowDown } from 'react-icons/md';
 import {BiMap, BiSwim} from 'react-icons/bi';
 import {MdArrowBackIosNew, MdArrowForwardIos} from 'react-icons/md'
 import {RiHotelBedFill} from 'react-icons/ri'
+import {FaBed, FaICursor, FaImages, FaPlane} from 'react-icons/fa'
+import {AiOutlineMail} from 'react-icons/ai'
 import './TravelInfo.css';
 import { GiCruiser, GiCultist, GiPagoda, GiSpeedBoat } from 'react-icons/gi';
 
@@ -35,7 +37,7 @@ function TravelInfo() {
                 <MdKeyboardArrowDown className='banner-arrow'/>
             </div>
         </div>
-        <div className="travel-address">
+        <div className="tour-address">
             <div className='travel-intro'>
                 <span className='travel-title'>VietNam - The Land of Timeless Charm</span>
                 <img src="https://d2lwt6tidfiof0.cloudfront.net/images/destination/vietnam.jpg" alt="" />
@@ -149,7 +151,7 @@ function TravelInfo() {
                     Interacting with friendly local people in floating Mekong Delta will absolutely highlight your holiday in our beautiful country. 
                     And if you still fall in love with the beach, hop on the fresh air and stunning beaches in Hoi An in the Central of Vietnam, you will love the sunshine and the waves in the wonderful atmosphere of peaceful town.
                 </p>
-                <h2 className="inclusions-line">Inclusions of this tour</h2>
+                <h2 className="inclusions-line">INCLUSIONS OF THIS TOUR</h2>
                 <div className="inclusions-detail">
                     <div className="inclusions-accomodation">
                         <div className='accomodation-note'>
@@ -213,7 +215,7 @@ function TravelInfo() {
                     </div>
                 </div>
                 <div className="tour-highlights">   
-                    <h2>HIGHLIGHTS OF THIS TOUR</h2>
+                    <h2 className="highlight-line">HIGHLIGHTS OF THIS TOUR</h2>
                     <div className='hightlight-content'>
                         <div className="tour-intro">
                             <img src="https://d2lwt6tidfiof0.cloudfront.net/uploads/slide/vietnam-cambodia-family-tour-2-1530003157.jpg" alt="" />
@@ -221,17 +223,95 @@ function TravelInfo() {
                         </div>
                         <div className="tour-highlight">
                             <ul>
-                                <li>Have great family moments with water puppet show and cyclo ride in Hanoi capital</li>
-                                <li>Introduce to your kids the World Natural Wonders – Halong Bay with lots of holiday activities: swimming, relaxing, kayaking,...</li>
-                                <li>Enjoy Hoi An biking trip to rural villages to join a mini cooking class at a local family house and have fun with basket boat ride along Bay Mau water coconut forest</li>
-                                <li>Explore My Son Sanctuary, the ancient ruins of Cham Empire and also the UNESCO World Heritage Site in South-Central Vietnam</li>
-                                <li>Get kids involved in a history lesson at the legend Cu Chi tunnels system</li>
-                                <li>Immerse in the vibrant ambience of Saigon at night by Vespa motorbikes</li>
+                                <li><BsCheck2 className='tour-highlight-check'/>Have great family moments with water puppet show and cyclo ride in Hanoi capital</li>
+                                <li><BsCheck2 className='tour-highlight-check'/>Introduce to your kids the World Natural Wonders – Halong Bay with lots of holiday activities: swimming, relaxing, kayaking,...</li>
+                                <li><BsCheck2 className='tour-highlight-check'/>Enjoy Hoi An biking trip to rural villages to join a mini cooking class at a local family house and have fun with basket boat ride along Bay Mau water coconut forest</li>
+                                <li><BsCheck2 className='tour-highlight-check'/>Explore My Son Sanctuary, the ancient ruins of Cham Empire and also the UNESCO World Heritage Site in South-Central Vietnam</li>
+                                <li><BsCheck2 className='tour-highlight-check'/>Get kids involved in a history lesson at the legend Cu Chi tunnels system</li>
+                                <li><BsCheck2 className='tour-highlight-check'/>Immerse in the vibrant ambience of Saigon at night by Vespa motorbikes</li>
                             </ul>
+                            <span>Read more ...</span>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div className="your-choice">
+            <h2 className="yourchoice-line">CHOOSE YOUR BEST CHOICE</h2>
+            <div className="tour-choices">
+                <div className="tour-choice">
+                    <div className="tour-option"><p>ECONOMY</p></div>
+                    <div className="tour-choice--detail">
+                        <ul>
+                            <li><FaBed className='icon-choice'/> Hotel (10 nights), Cruise (1 night)</li>
+                            <li><FaPlane className='icon-choice'/> Car, Walking, Cruise, Flight ...</li>
+                            <li><BsPeopleFill className='icon-choice'/> Private Guide, Driver, Trip Manager</li>
+                            <li><MdFoodBank className='icon-choice'/> 11 Breakfasts, 6 Lunches, 4 Dinners</li>
+                            <li><FaImages className='icon-choice'/> 17 Unique experiences...</li>
+                            <li><BsCheck2 className='icon-choice'/>Entrance fees, excursions, visa, water...</li>
+                        </ul>
+                    </div>
+                    <div className="tour-enquire">
+                        <p>ENQUIRE NOW</p>
+                    </div>
+                </div>
+                <div className="tour-choice">
+                    <div className="tour-option-re"><p>RECOMMENDED DELUXE</p></div>
+                    <div className="tour-choice--detail">
+                        <ul>
+                            <li><FaBed className='icon-choice'/> Hotel (10 nights), Cruise (1 night)</li>
+                            <li><FaPlane className='icon-choice'/> Car, Walking, Cruise, Flight ...</li>
+                            <li><BsPeopleFill className='icon-choice'/> Private Guide, Driver, Trip Manager</li>
+                            <li><MdFoodBank className='icon-choice'/> 11 Breakfasts, 6 Lunches, 4 Dinners</li>
+                            <li><FaImages className='icon-choice'/> 17 Unique experiences...</li>
+                            <li><BsCheck2 className='icon-choice'/>Entrance fees, excursions, visa, water...</li>
+                        </ul>
+                    </div>
+                    <div className="tour-enquire-re">
+                        <p>ENQUIRE NOW</p>
+                    </div>
+                </div>
+                <div className="tour-choice">
+                    <div className="tour-option"><p>LUXURY</p></div>
+                    <div className="tour-choice--detail">
+                        <ul>
+                            <li><FaBed className='icon-choice'/> Hotel (10 nights), Cruise (1 night)</li>
+                            <li><FaPlane className='icon-choice'/> Car, Walking, Cruise, Flight ...</li>
+                            <li><BsPeopleFill className='icon-choice'/> Private Guide, Driver, Trip Manager</li>
+                            <li><MdFoodBank className='icon-choice'/> 11 Breakfasts, 6 Lunches, 4 Dinners</li>
+                            <li><FaImages className='icon-choice'/> 17 Unique experiences...</li>
+                            <li><BsCheck2 className='icon-choice'/>Entrance fees, excursions, visa, water...</li>
+                        </ul>
+                    </div>
+                    <div className="tour-enquire">
+                        <p>ENQUIRE NOW</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div className="tailormade">
+            <div className="tailormade-team">
+                <div className="tailormade-img">
+                    <img src="https://d2lwt6tidfiof0.cloudfront.net/images/otm_home/a1.webp" alt=''/>
+                    <img src="https://d2lwt6tidfiof0.cloudfront.net/images/otm_home/a2.webp"alt=''/>
+                    <img src="https://d2lwt6tidfiof0.cloudfront.net/images/otm_home/a3.webp"alt=''/>
+                    <img src="https://d2lwt6tidfiof0.cloudfront.net/images/otm_home/a5.webp"alt=''/>
+                    <img src="https://d2lwt6tidfiof0.cloudfront.net/images/otm_home/a6.webp"alt=''/>
+                    <img src="https://d2lwt6tidfiof0.cloudfront.net/images/otm_home/a8.webp"alt=''/>
+                    <div className="tailormade-title">We can customize this tour just for you</div>
+                </div>
+                <div className="tailormade-contact">
+                    <a href="#!">
+                        <AiOutlineMail className='tailormade-mail'/>
+                        TAILOR MADE & FREE QUOTE FOR THIS TOUR</a>
+                </div>
+            </div>
+        </div>
+
+        <div className="contact-yourfriend">
+            <h2>Share your friends</h2>
         </div>
 
     </div> );
