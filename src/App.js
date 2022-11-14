@@ -22,8 +22,13 @@ import Thailan from "./pages/Thailan/Thailan";
 import Blog from "./pages/Blog/Blog";
 import CustomerFeedback from "./pages/CustomerFeedback/CustomerFeedback";
 import Tourlist from "./pages/Tourlist/Tourlist";
-import Destination from "./pages/Destination/Destination";
 import Feedback from "./pages/Home/Feedback/Feedback";
+import Affiliates from "./pages/Company/Affiliates/Affiliates";
+import AboutOfUs from "./pages/Company/AboutOfUs/AboutOfUs";
+import Payment from "./pages/Company/Payment/Payment";
+import Policy from "./pages/Company/Policy/Policy";
+import Privacy from "./pages/Company/Privacy/Privacy";
+
 
  
 function App() {
@@ -46,6 +51,11 @@ function App() {
       <Route path='/Destination/Thailan' element={<Thailan/>}/>
       <Route path='/Destination/Campuchia' element={<Campuchia/>}/>
       <Route path="/CustomerFeedback" element={<CustomerFeedback />} />
+      <Route path="/Affiliates" element={<Affiliates />} />
+      <Route path="/AboutOfUs" element={<AboutOfUs />} />
+      <Route path="/Payment" element={<Payment />} />
+      <Route path="/Policy" element={<Policy />} />
+      <Route path="/Privacy" element={<Privacy />} />
       <Route path="/Blog" element={<Blog />} />
       <Route path=':id' element={<Tourlist/>}/>
       </Routes>
