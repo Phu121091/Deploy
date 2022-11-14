@@ -7,6 +7,7 @@ import { MdTransferWithinAStation } from 'react-icons/md';
 import { RiMoneyDollarCircleLine, Ri24HoursFill } from "react-icons/ri";
 import './style.css';
 import Img1 from '../../data/images/banner/16.jpg';
+import { Link } from 'react-router-dom';
  
 const TourItemlist = ({status,data}) => {
 
@@ -29,26 +30,7 @@ const TourItemlist = ({status,data}) => {
                 
                 <ul className="highlight">
                   {data.highlight.map((d)=><li>{d}</li>)}
-                  {/* <li>
-                    {" "}
-                      We'll see that in Hanoi's lovely Old Quarter, where the city's hectic rhythm may be experienced.{" "}
-                  </li>
-                  <li>
-                    {" "}
-                    Great entertainment and the ideal opportunity to sample some of the lesser-known foods that locals in Hanoi and Hoi An enjoy eating.{" "}
-                  </li>
-                  <li>
-                    {" "}
-                    Take in the breathtaking natural splendor of Halong Bay, which is a World Heritage Site and is also known as "Dragon Descending to the Sea" in Vietnamese.{" "}
-                  </li>
-                  <li>
-                    {" "}
-                    Gain deeper insight into locals' daily lives in the Mekong Delta, which serves as a spiritual representation of the region's distinctiveness.{" "}
-                  </li>
-                  <li>
-                    {" "}
-                    Get the chance to learn about a fun itinerary and take part in a lot of activities with locals, on Tan Phong island.{" "}
-                  </li> */}
+      
                 </ul>
               </div>
               <div className="read-more">
@@ -104,7 +86,7 @@ const TourItemlist = ({status,data}) => {
               </div>
             </div>
             <div className="tour-explore">
-              <a href="#!">EXPLORE THIS TRIP</a>
+              <Link to="/TravelInfo">EXPLORE THIS TRIP</Link>
               <BsHeart className='tour-heart'/>
             </div>
           </div>

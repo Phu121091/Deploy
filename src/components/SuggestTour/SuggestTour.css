@@ -1,6 +1,3 @@
-.wrapper-special {
-
-}
 
 .suggest-tour{
     margin: 5% auto;
@@ -27,8 +24,18 @@
 }
 .suggest-main{
     margin-top: 20px;
-    font-family: 'Mukta', sans-serif;
     font-size: 18px;
-    color: black;
     text-align: start;
+    font-family: 'Poppins', sans-serif;
+    color: #666666;
 }
+
+@media only screen and  (max-width: 850px) {
+    .suggest-main{
+        font-size: 12px ;
+    }
+    .suggest-title{
+        font-size: 25px;
+    }
+}
+

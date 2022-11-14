@@ -1,6 +1,4 @@
-*{
-    box-sizing:border-box;
-}
+
 .sp-grid{
     display: flex;
     flex-direction: row;
@@ -101,3 +99,23 @@
     rgba(0, 0, 0, 0.15) 0px 16px 8px, rgba(0, 0, 0, 0.15) 0px 32px 16px;
 }
 
+@media screen and (max-width: 1120px) {
+  .grid-mini,.item-big{
+    height: 350px;
+    }
+    .item-small{
+        height: 170px;
+    }
+}
+@media only screen and  (max-width: 850px) {
+    .sp-grid,.grid-min,.grid-mini{
+        flex-direction: column;
+    }
+    .sp-grid div,.grid-mini div,.grid-min div{
+        width: 100%;
+        margin: 0;
+    }
+    .item-big,.item-small{
+        height: 200px;
+    }
+}

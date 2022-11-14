@@ -31,7 +31,7 @@ const Footer = () => {
     <div className='main-footer'> 
 
       <div className='list-north'>
-        <h1>Northern</h1>
+        <h1 className='footer-h1'>Northern</h1>
         <p>Ha Noi</p>
         <p>Hai Phong</p>
         <p>Ha Nam</p>
@@ -39,14 +39,14 @@ const Footer = () => {
         <p>Cao Bang</p>
       </div>
       <div className='list-mid'>
-        <h1>Central</h1>
+        <h1 className='footer-h1'>Central</h1>
         <p>Nghe An</p>
         <p>Quang Binh</p>
         <p>Quang Tri</p>
         <p>Thanh Hoa</p>
       </div>
       <div className='list-south'>
-        <h1>Southern</h1>
+        <h1 className='footer-h1'>Southern</h1>
         <p>Ho Chi Minh City</p>
         <p>Binh Duong</p>
         <p>Dong Nai</p>

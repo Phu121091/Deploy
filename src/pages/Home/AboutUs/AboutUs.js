@@ -16,9 +16,7 @@ const AboutUs = () => {
         </div>
         
         <div className='au-main'>
-          <img className='au-img' src='https://th.bing.com/th/id/OIP.bhS6VJpakSO_f1496NMa2AHaHa?pid=ImgDet&rs=1'/>
-          <img className='au-img' src='https://th.bing.com/th/id/OIP.bhS6VJpakSO_f1496NMa2AHaHa?pid=ImgDet&rs=1'/>
-          <img className='au-img' src='https://th.bing.com/th/id/OIP.bhS6VJpakSO_f1496NMa2AHaHa?pid=ImgDet&rs=1'/>
+          <img className='au-img' src='https://th.bing.com/th/id/R.8b040e1db190fa0e5850486d7634cb26?rik=mdk%2bRGJBZxz%2bJQ&riu=http%3a%2f%2fclipart-library.com%2fimages%2f8Txrx4LRc.jpg&ehk=IZp9PoYzTYrYOWfxgMGaSuzbQx5AY4YfhL8YFy8tvMk%3d&risl=&pid=ImgRaw&r=0'/>
           </div>
       </div>
   );
