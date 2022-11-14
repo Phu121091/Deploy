@@ -1,6 +1,6 @@
 import React from "react";
-import "./CustomerFeedback.css";
-
+import "./CustomerFeedback.css"
+import DataFb from "./DataFeedback/DataFb";
 const CustomerFeedback = () => {
   return (
     <div>
@@ -34,6 +34,8 @@ const CustomerFeedback = () => {
         <input type="checkbox" id="checkbox"></input> I understand Salt in our Hair will not respond to GUEST POST requests.
         <button class="button">Submit</button>
       </div>
+      <div className="somefeedback"> This is some feeback: look at that and see.</div>
+      <DataFb/>
       <div className="bottom-feed">
         <h1> “Their mastery of photography, design, and social media,
              as well as their fun personality, made our collaboration more pleasure and less work!”
