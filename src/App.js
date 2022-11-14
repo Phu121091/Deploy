@@ -46,6 +46,7 @@ function App() {
       <Route path='/Destination/Thailan' element={<Thailan/>}/>
       <Route path='/Destination/Campuchia' element={<Campuchia/>}/>
       <Route path="/CustomerFeedback" element={<CustomerFeedback />} />
+      <Route path="/Blog" element={<Blog />} />
       <Route path=':id' element={<Tourlist/>}/>
       </Routes>
       </Layout> 
