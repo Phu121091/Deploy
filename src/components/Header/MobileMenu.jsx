@@ -40,7 +40,7 @@ const MobileMenu = ({showmobile}) => {
         <Link to='/Heritage' style={{height:`${listmb[2]}`}}>HERITAGES</Link>
         <Link to='/Reponsible' style={{height:`${listmb[2]}`}}>REPONSIBLE TRAVEL</Link>
         </div>
-        <p className="title-mobile" onClick={()=>Showlistmb4()}>About</p>
+        <p className="title-mobile" onClick={()=>Showlistmb4()}>Company</p>
         <div className="about-list-mobile">
         <Link to='/AboutUs' style={{height:`${listmb[3]}`}}>ABOUT US</Link>
         <Link to='/Policy' style={{height:`${listmb[3]}`}}>POLICY</Link>
@@ -48,7 +48,7 @@ const MobileMenu = ({showmobile}) => {
         <Link to='/Payment' style={{height:`${listmb[3]}`}}>PAYMENT GATEWAY</Link>
         <Link to='/Affiliates' style={{height:`${listmb[3]}`}}>AFFILIATES</Link>
         </div>
-        <p className="title-mobile" onClick={()=>Showlistmb5()}>News</p>
+        <p className="title-mobile" onClick={()=>Showlistmb5()}>Media</p>
         <div className="news-list-mobile">
         <Link to='/Blog' style={{height:`${listmb[4]}`}}>BLOG</Link>
         <Link to='/Feedback' style={{height:`${listmb[4]}`}}>FEEDBACK</Link>

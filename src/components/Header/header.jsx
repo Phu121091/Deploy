@@ -145,7 +145,7 @@ const Header = () => {
       </NavLink>
       </div>
       <div className="menu-li">
-      <NavLink to="/News" id={handleActive} className='link-f'>
+      <NavLink to="/" id={handleActive} className='link-f'>
         Company
       </NavLink>
       <IoIosArrowDown/>
@@ -158,7 +158,7 @@ const Header = () => {
       </div>
       </div>
       <div className="menu-li">
-      <NavLink to="/TravelStyles" id={handleActive} className='link-f'>
+      <NavLink to="/CustomerFeedback" id={handleActive} className='link-f'>
         Media
       </NavLink>
       <IoIosArrowDown/>
