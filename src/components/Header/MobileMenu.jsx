@@ -13,7 +13,7 @@ const MobileMenu = ({showmobile}) => {
   const Showlistmb6 = () => {listmb[5]=='20px'?setlistmb(['0px','0px','0px','0px','0px','0px']):setlistmb(['0px','0px','0px','0px','0px','20px'])};
 
   return (
-    <div className="menu-mobile" style={{right:`${showmobile}`}}>
+    <div className="menu-mobile" style={{display:`${showmobile}`}}>
         <p className="title-mobile" onClick={()=>Showlistmb1()}>Destination</p>
         <div className="des-list-mobile">
           <Link to='/Destination/Vietnam' style={{height:`${listmb[0]}`}}>Vietnam</Link>
@@ -58,7 +58,7 @@ const MobileMenu = ({showmobile}) => {
           <Link to='/LogIn' style={{height:`${listmb[5]}`}}>Log In</Link>
           <Link to='/SignUp' style={{height:`${listmb[5]}`}}>Sign Up</Link>
         </div>
-        <Link to='/TripFinder' className='title-mobile'>Trip Finder</Link>
+        <Link to='/TripFinder' className='link-finder-mobile'>Trip Finder</Link>
       </div>
     
   )

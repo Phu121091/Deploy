@@ -13,31 +13,10 @@ import Review from './Review/Review';
 import Bloglist from './Review/Bloglist/Bloglist';
 import Slogan from './Slogan/Slogan';
 import Feedback from './Feedback/Feedback';
+import Data from '../../data/tourlist.json';
+
 const Home = () => {
   
-//   const [sellList, setSellList] = useState([]);
-//     const [isLoading, setIsLoading] = useState(false);
-//   const callApi =async()=>{
-//     setIsLoading(true);
-
-//      const response = await axios({
-//          method: 'POST',
-//          url: 'https://dieuhanh.vatco.vn/MobileLogin/GetFullText?id=3925',
-//          type: 'json'
-//      });
-  
-//      if(response.status === 200){
-//       setSellList(response.data);
-//   }
-//   console.log(sellList);
-//   setIsLoading(false);     
-// }
-// useEffect(()=>{
-//   callApi();    
-  
-// },[]);
-// console.log(sellList);
-
   return (
     <div> 
  {/* Slide head  */}
@@ -45,14 +24,14 @@ const Home = () => {
           <SlideBig/>
         </div>
 
-      <Hot/>
+      <Hot data={Data}/>
       <AboutUs/>
       <SuggestTour />
       <Plus/>
       <SpecialTour />
-      <Review/>
-      <Feedback/>
-      <Bloglist/>
+      {/* <Review/> */}
+      {/* <Feedback/>
+      <Bloglist/> */}
       <Slogan/>
       <Whychoose/>
       

@@ -18,6 +18,8 @@ const SlideBig = () => {
     color: "#fff",
     lineHeight: "700px",
     textAlign: "center",
+    overFlow:'hidden'
+
   };
   
 

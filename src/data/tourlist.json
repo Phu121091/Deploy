@@ -3,6 +3,7 @@
         "id":1,
         "title":"Truly Vietnam Cuisine Taste Tour 1",
         "style":"Family",
+        "country":["VietNam","Lao"],
         "destinations":"Hanoi - Halong Bay - Hoi An - Hue - Ho Chi Minh City - Mekong Delta - Cu Chi Tunnels – Vietnam",
         "highlight":[
             "We'll see that in Hanoi's lovely Old Quarter, where the city's hectic rhythm may be experienced.",
@@ -92,7 +93,7 @@
         
     ],
         "note":"PROGRAMS & SCHEDULES SUBJECT TO CHANGE WITHOUT PRIOR NOTIC",
-        "price":1126,
+        "price":1000,
         "date":{
             "start":"11/10/2022",
             "end":"12/12/2022"
@@ -102,6 +103,7 @@
         "id":2,
         "title":"Truly Vietnam Cuisine Taste Tour 2",
         "style":"Classic",
+        "country":["VietNam","ThaiLan"],
         "destinations":"Hanoi - Halong Bay - Hoi An - Hue - Ho Chi Minh City - Mekong Delta - Cu Chi Tunnels – Vietnam",
         "highlight":[
             "We'll see that in Hanoi's lovely Old Quarter, where the city's hectic rhythm may be experienced.",
@@ -123,16 +125,17 @@
             }
         ],
         "note":"PROGRAMS & SCHEDULES SUBJECT TO CHANGE WITHOUT PRIOR NOTIC",
-        "price":1126,
+        "price":2000,
         "date":{
-            "start":"11/10/2022",
-            "end":"12/12/2022"
+            "start":"11/11/2022",
+            "end":"12/1/2023"
         }
     },
     {
         "id":3,
         "title":"Truly Vietnam Cuisine Taste Tour 3",
         "style":"Beach",
+        "country":["ThaiLan"],
         "destinations":"Hanoi - Halong Bay - Hoi An - Hue - Ho Chi Minh City - Mekong Delta - Cu Chi Tunnels – Vietnam",
         "highlight":[
             "We'll see that in Hanoi's lovely Old Quarter, where the city's hectic rhythm may be experienced.",
@@ -154,9 +157,9 @@
             }
         ],
         "note":"PROGRAMS & SCHEDULES SUBJECT TO CHANGE WITHOUT PRIOR NOTIC",
-        "price":1126,
+        "price":2040,
         "date":{
-            "start":"11/10/2022",
+            "start":"1/1/2022",
             "end":"12/12/2022"
         }
     },
@@ -164,6 +167,7 @@
         "id":4,
         "title":"Truly Vietnam Cuisine Taste Tour 4",
         "style":"Cruise",
+        "country":["Campuchia"],
         "destinations":"Hanoi - Halong Bay - Hoi An - Hue - Ho Chi Minh City - Mekong Delta - Cu Chi Tunnels – Vietnam",
         "highlight":[
             "We'll see that in Hanoi's lovely Old Quarter, where the city's hectic rhythm may be experienced.",
@@ -185,16 +189,17 @@
             }
         ],
         "note":"PROGRAMS & SCHEDULES SUBJECT TO CHANGE WITHOUT PRIOR NOTIC",
-        "price":1126,
+        "price":10000,
         "date":{
-            "start":"11/10/2022",
-            "end":"12/12/2022"
+            "start":"5/5/2022",
+            "end":"12/6/2022"
         }
     },
     {
         "id":5,
         "title":"Truly Vietnam Cuisine Taste Tour 5",
         "style":"Cruise",
+        "country":["VietNam"],
         "destinations":"Hanoi - Halong Bay - Hoi An - Hue - Ho Chi Minh City - Mekong Delta - Cu Chi Tunnels – Vietnam",
         "highlight":[
             "We'll see that in Hanoi's lovely Old Quarter, where the city's hectic rhythm may be experienced.",
@@ -216,7 +221,7 @@
             }
         ],
         "note":"PROGRAMS & SCHEDULES SUBJECT TO CHANGE WITHOUT PRIOR NOTIC",
-        "price":1126,
+        "price":1500,
         "date":{
             "start":"11/10/2022",
             "end":"12/12/2022"
@@ -226,6 +231,7 @@
         "id":6,
         "title":"Truly Vietnam Cuisine Taste Tour 6",
         "style":"Adventure",
+        "country":["Campuchia","ThaiLan"],
         "destinations":"Hanoi - Halong Bay - Hoi An - Hue - Ho Chi Minh City - Mekong Delta - Cu Chi Tunnels – Vietnam",
         "highlight":[
             "We'll see that in Hanoi's lovely Old Quarter, where the city's hectic rhythm may be experienced.",
@@ -247,7 +253,7 @@
             }
         ],
         "note":"PROGRAMS & SCHEDULES SUBJECT TO CHANGE WITHOUT PRIOR NOTIC",
-        "price":1126,
+        "price":1300,
         "date":{
             "start":"11/10/2022",
             "end":"12/12/2022"
@@ -257,6 +263,7 @@
         "id":7,
         "title":"Truly Vietnam Cuisine Taste Tour 7",
         "style":"Adventure",
+        "country":["VietNam"],
         "destinations":"Hanoi - Halong Bay - Hoi An - Hue - Ho Chi Minh City - Mekong Delta - Cu Chi Tunnels – Vietnam",
         "highlight":[
             "We'll see that in Hanoi's lovely Old Quarter, where the city's hectic rhythm may be experienced.",
@@ -278,7 +285,7 @@
             }
         ],
         "note":"PROGRAMS & SCHEDULES SUBJECT TO CHANGE WITHOUT PRIOR NOTIC",
-        "price":1126,
+        "price":500,
         "date":{
             "start":"11/10/2022",
             "end":"12/12/2022"
@@ -288,6 +295,7 @@
         "id":8,
         "title":"Truly Vietnam Cuisine Taste Tour 8",
         "style":"Short trip",
+        "country":["ThaiLan"],
         "destinations":"Hanoi - Halong Bay - Hoi An - Hue - Ho Chi Minh City - Mekong Delta - Cu Chi Tunnels – Vietnam",
         "highlight":[
             "We'll see that in Hanoi's lovely Old Quarter, where the city's hectic rhythm may be experienced.",
@@ -309,7 +317,7 @@
             }
         ],
         "note":"PROGRAMS & SCHEDULES SUBJECT TO CHANGE WITHOUT PRIOR NOTIC",
-        "price":1126,
+        "price":700,
         "date":{
             "start":"11/10/2022",
             "end":"12/12/2022"
@@ -319,6 +327,7 @@
         "id":9,
         "title":"Truly Vietnam Cuisine Taste Tour 9",
         "style":"Culinary",
+        "country":["Lao"],
         "destinations":"Hanoi - Halong Bay - Hoi An - Hue - Ho Chi Minh City - Mekong Delta - Cu Chi Tunnels – Vietnam",
         "highlight":[
             "We'll see that in Hanoi's lovely Old Quarter, where the city's hectic rhythm may be experienced.",
@@ -340,7 +349,7 @@
             }
         ],
         "note":"PROGRAMS & SCHEDULES SUBJECT TO CHANGE WITHOUT PRIOR NOTIC",
-        "price":1126,
+        "price":2100,
         "date":{
             "start":"11/10/2022",
             "end":"12/12/2022"
@@ -350,6 +359,7 @@
         "id":10,
         "title":"Truly Vietnam Cuisine Taste Tour 10",
         "style":"Classic",
+        "country":["VietNam","Lao"],
         "destinations":"Hanoi - Halong Bay - Hoi An - Hue - Ho Chi Minh City - Mekong Delta - Cu Chi Tunnels – Vietnam",
         "highlight":[
             "We'll see that in Hanoi's lovely Old Quarter, where the city's hectic rhythm may be experienced.",
@@ -371,7 +381,7 @@
             }
         ],
         "note":"PROGRAMS & SCHEDULES SUBJECT TO CHANGE WITHOUT PRIOR NOTIC",
-        "price":1126,
+        "price":3126,
         "date":{
             "start":"11/10/2022",
             "end":"12/12/2022"
@@ -381,6 +391,7 @@
         "id":11,
         "title":"Truly Vietnam Cuisine Taste Tour 11",
         "style":"Adventure",
+        "country":["Lao"],
         "destinations":"Hanoi - Halong Bay - Hoi An - Hue - Ho Chi Minh City - Mekong Delta - Cu Chi Tunnels – Vietnam",
         "highlight":[
             "We'll see that in Hanoi's lovely Old Quarter, where the city's hectic rhythm may be experienced.",
@@ -402,7 +413,7 @@
             }
         ],
         "note":"PROGRAMS & SCHEDULES SUBJECT TO CHANGE WITHOUT PRIOR NOTIC",
-        "price":1126,
+        "price":1800,
         "date":{
             "start":"11/10/2022",
             "end":"12/12/2022"
@@ -412,6 +423,7 @@
         "id":12,
         "title":"Truly Vietnam Cuisine Taste Tour 12",
         "style":"Culinary",
+        "country":["ThaiLan"],
         "destinations":"Hanoi - Halong Bay - Hoi An - Hue - Ho Chi Minh City - Mekong Delta - Cu Chi Tunnels – Vietnam",
         "highlight":[
             "We'll see that in Hanoi's lovely Old Quarter, where the city's hectic rhythm may be experienced.",
@@ -433,7 +445,7 @@
             }
         ],
         "note":"PROGRAMS & SCHEDULES SUBJECT TO CHANGE WITHOUT PRIOR NOTIC",
-        "price":1126,
+        "price":200,
         "date":{
             "start":"11/10/2022",
             "end":"12/12/2022"
@@ -442,7 +454,8 @@
     {
         "id":13,
         "title":"Truly Vietnam Cuisine Taste Tour 13",
-        "style":"Beach",
+        "style":"Beach",        
+        "country":["VietNam"],
         "destinations":"Hanoi - Halong Bay - Hoi An - Hue - Ho Chi Minh City - Mekong Delta - Cu Chi Tunnels – Vietnam",
         "highlight":[
             "We'll see that in Hanoi's lovely Old Quarter, where the city's hectic rhythm may be experienced.",
@@ -464,7 +477,7 @@
             }
         ],
         "note":"PROGRAMS & SCHEDULES SUBJECT TO CHANGE WITHOUT PRIOR NOTIC",
-        "price":1126,
+        "price":550,
         "date":{
             "start":"11/10/2022",
             "end":"12/12/2022"
@@ -474,6 +487,7 @@
         "id":14,
         "title":"Truly Vietnam Cuisine Taste Tour 14",
         "style":"Cruise",
+        "country":["VietNam","ThaiLan"],
         "destinations":"Hanoi - Halong Bay - Hoi An - Hue - Ho Chi Minh City - Mekong Delta - Cu Chi Tunnels – Vietnam",
         "highlight":[
             "We'll see that in Hanoi's lovely Old Quarter, where the city's hectic rhythm may be experienced.",
@@ -495,7 +509,7 @@
             }
         ],
         "note":"PROGRAMS & SCHEDULES SUBJECT TO CHANGE WITHOUT PRIOR NOTIC",
-        "price":1126,
+        "price":1000,
         "date":{
             "start":"11/10/2022",
             "end":"12/12/2022"
@@ -505,6 +519,7 @@
         "id":15,
         "title":"Truly Vietnam Cuisine Taste Tour 15",
         "style":"Family",
+        "country":["VietNam","ThaiLan"],
         "destinations":"Hanoi - Halong Bay - Hoi An - Hue - Ho Chi Minh City - Mekong Delta - Cu Chi Tunnels – Vietnam",
         "highlight":[
             "We'll see that in Hanoi's lovely Old Quarter, where the city's hectic rhythm may be experienced.",
@@ -526,7 +541,7 @@
             }
         ],
         "note":"PROGRAMS & SCHEDULES SUBJECT TO CHANGE WITHOUT PRIOR NOTIC",
-        "price":1126,
+        "price":1426,
         "date":{
             "start":"11/10/2022",
             "end":"12/12/2022"
@@ -536,6 +551,7 @@
         "id":16,
         "title":"Truly Vietnam Cuisine Taste Tour 16",
         "style":"Classic",
+        "country":["VietNam"],
         "destinations":"Hanoi - Halong Bay - Hoi An - Hue - Ho Chi Minh City - Mekong Delta - Cu Chi Tunnels – Vietnam",
         "highlight":[
             "We'll see that in Hanoi's lovely Old Quarter, where the city's hectic rhythm may be experienced.",
@@ -557,7 +573,7 @@
             }
         ],
         "note":"PROGRAMS & SCHEDULES SUBJECT TO CHANGE WITHOUT PRIOR NOTIC",
-        "price":1126,
+        "price":400,
         "date":{
             "start":"11/10/2022",
             "end":"12/12/2022"
@@ -567,6 +583,7 @@
         "id":17,
         "title":"Truly Vietnam Cuisine Taste Tour 17",
         "style":"Family",
+        "country":["ThaiLan"],
         "destinations":"Hanoi - Halong Bay - Hoi An - Hue - Ho Chi Minh City - Mekong Delta - Cu Chi Tunnels – Vietnam",
         "highlight":[
             "We'll see that in Hanoi's lovely Old Quarter, where the city's hectic rhythm may be experienced.",
@@ -588,7 +605,7 @@
             }
         ],
         "note":"PROGRAMS & SCHEDULES SUBJECT TO CHANGE WITHOUT PRIOR NOTIC",
-        "price":1126,
+        "price":1700,
         "date":{
             "start":"11/10/2022",
             "end":"12/12/2022"
@@ -598,6 +615,7 @@
         "id":18,
         "title":"Truly Vietnam Cuisine Taste Tour 18",
         "style":"Beach",
+        "country":["Lao"],
         "destinations":"Hanoi - Halong Bay - Hoi An - Hue - Ho Chi Minh City - Mekong Delta - Cu Chi Tunnels – Vietnam",
         "highlight":[
             "We'll see that in Hanoi's lovely Old Quarter, where the city's hectic rhythm may be experienced.",
@@ -619,7 +637,7 @@
             }
         ],
         "note":"PROGRAMS & SCHEDULES SUBJECT TO CHANGE WITHOUT PRIOR NOTIC",
-        "price":1126,
+        "price":800,
         "date":{
             "start":"11/10/2022",
             "end":"12/12/2022"
@@ -629,6 +647,7 @@
         "id":19,
         "title":"Truly Vietnam Cuisine Taste Tour 19",
         "style":"Family",
+        "country":["Campuchia"],
         "destinations":"Hanoi - Halong Bay - Hoi An - Hue - Ho Chi Minh City - Mekong Delta - Cu Chi Tunnels – Vietnam",
         "highlight":[
             "We'll see that in Hanoi's lovely Old Quarter, where the city's hectic rhythm may be experienced.",
@@ -650,7 +669,7 @@
             }
         ],
         "note":"PROGRAMS & SCHEDULES SUBJECT TO CHANGE WITHOUT PRIOR NOTIC",
-        "price":1126,
+        "price":1226,
         "date":{
             "start":"11/10/2022",
             "end":"12/12/2022"
@@ -660,6 +679,7 @@
         "id":20,
         "title":"Truly Vietnam Cuisine Taste Tour 20",
         "style":"Culinary",
+        "country":["VietNam","ThaiLan"],
         "destinations":"Hanoi - Halong Bay - Hoi An - Hue - Ho Chi Minh City - Mekong Delta - Cu Chi Tunnels – Vietnam",
         "highlight":[
             "We'll see that in Hanoi's lovely Old Quarter, where the city's hectic rhythm may be experienced.",
@@ -681,7 +701,7 @@
             }
         ],
         "note":"PROGRAMS & SCHEDULES SUBJECT TO CHANGE WITHOUT PRIOR NOTIC",
-        "price":1126,
+        "price":11126,
         "date":{
             "start":"11/10/2022",
             "end":"12/12/2022"
@@ -691,6 +711,7 @@
         "id":21,
         "title":"Truly Vietnam Cuisine Taste Tour 21",
         "style":"Adventure",
+        "country":["VietNam","ThaiLan"],
         "destinations":"Hanoi - Halong Bay - Hoi An - Hue - Ho Chi Minh City - Mekong Delta - Cu Chi Tunnels – Vietnam",
         "highlight":[
             "We'll see that in Hanoi's lovely Old Quarter, where the city's hectic rhythm may be experienced.",
@@ -712,7 +733,7 @@
             }
         ],
         "note":"PROGRAMS & SCHEDULES SUBJECT TO CHANGE WITHOUT PRIOR NOTIC",
-        "price":1126,
+        "price":10026,
         "date":{
             "start":"11/10/2022",
             "end":"12/12/2022"

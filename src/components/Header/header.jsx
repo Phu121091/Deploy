@@ -49,8 +49,8 @@ const Header = () => {
     showlog==='show'?setshowlog('hidden'):setshowlog('show')
   }
 // Show menu mobile
-  const [showmobile,setshowmobile] =useState('-100%')
-  const Showlist = () => { (showmobile=='-100%')?setshowmobile('0%'):setshowmobile('-100%') }
+  const [showmobile,setshowmobile] =useState('none')
+  const Showlist = () => { (showmobile=='none')?setshowmobile('block'):setshowmobile('none') }
   
 
   return (
@@ -208,7 +208,7 @@ const Header = () => {
       <Buttontop/>
       </div>
 
-      <Search id={showfind}/>
+      {/* <Search id={showfind}/> */}
       <div className="log-container" id={showlog}>
 
         <Link to='/LogIn' className="log-link">Log in</Link>
