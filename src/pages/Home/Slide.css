@@ -50,7 +50,7 @@
 }
 @keyframes toleft{
     0%{
-        left: 80%;
+        left: 40%;
     }
     100%{
         left: 0%;
@@ -58,10 +58,10 @@
 }
 @keyframes toleft2{
     0%{
-        left: 80%;
+        left: 40%;
     }
     50%{
-        left: 80%;
+        left: 40%;
     }
     100%{
         left: 0%;

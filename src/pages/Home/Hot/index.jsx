@@ -1,5 +1,6 @@
 import React from 'react';
 import './style.css';
+import IMG from '../../../data/images/banner/16.jpg';
 
 const Hot = () => {
   return (
@@ -15,11 +16,15 @@ const Hot = () => {
       </p>
       </div>
       <div className='hot-grid'>
-        <div className='hot-box hot1'>a</div>
-        <div className='hot-box hot2'>a</div>
-        <div className='hot-box hot3'>a</div>
-        <div className='hot-box hot4'>a</div>
-        <div className='hot-box hot5'>a</div>
+        <div className='hot-grid1'>
+        <div className='hot-box hot1'><img src={IMG}/></div>
+        <div className='hot-box hot2'><img src={IMG}/></div>
+        </div>
+        <div className='hot-grid2'>
+        <div className='hot-box hot3'><img src={IMG}/></div>
+        <div className='hot-box hot4'><img src={IMG}/></div>
+        <div className='hot-box hot5'><img src={IMG}/></div>
+        </div>
       </div>
 
     </div>
