@@ -1,7 +1,6 @@
 .footer{
   background-image: url('../../data/images/banner/desert.jpg');
   background-size: cover;
-  height: 600px;
 }
 
 /* listlogo css */
@@ -73,4 +72,14 @@
 
 .end-footer p{
     text-align: center;
+}
+
+@media only screen and  (max-width: 850px) {
+    .footer-h1{
+        font-size: 15px;
+    }
+    .lg{
+        width: 60px;
+        height: 60px;
+    }
 }
