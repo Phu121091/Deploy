@@ -7,6 +7,7 @@ import {FaBed, FaICursor, FaImages, FaPlane} from 'react-icons/fa'
 import {AiOutlineMail} from 'react-icons/ai'
 import './TravelInfo.css';
 import { GiCruiser, GiCultist, GiPagoda, GiSpeedBoat } from 'react-icons/gi';
+import TravelDetail from './TravelDetail/TravelDetail'
 
 function TravelInfo() {
     return ( <div className="wrapper">
@@ -214,6 +215,7 @@ function TravelInfo() {
                         </div>
                     </div>
                 </div>
+                <TravelDetail/>
                 <div className="tour-highlights">   
                     <h2 className="highlight-line">HIGHLIGHTS OF THIS TOUR</h2>
                     <div className='hightlight-content'>
@@ -309,11 +311,10 @@ function TravelInfo() {
                 </div>
             </div>
         </div>
-
+        
         <div className="contact-yourfriend">
             <h2>Share your friends</h2>
         </div>
-
     </div> );
 }
 

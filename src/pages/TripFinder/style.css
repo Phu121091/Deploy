@@ -82,7 +82,13 @@
     font-size: 22px;
     margin-right: 18px;
     color: #696969;
+    transition: 0.2s;
     cursor: pointer;
+}
+
+.finder-reset:hover {
+  color: #333;
+  transition: 0.2s;
 }
 
 .fc {
