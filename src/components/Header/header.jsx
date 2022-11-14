@@ -150,7 +150,7 @@ const Header = () => {
       </NavLink>
       <IoIosArrowDown/>
       <div className="list-hidden list-4">
-        <Link to='/AboutUs'>ABOUT US</Link>
+        <Link to='/AboutOfUs'>ABOUT US</Link>
         <Link to='/Policy'>POLICY</Link>
         <Link to='/Privacy'>PRIVACY</Link>
         <Link to='/Payment'>PAYMENT GATEWAY</Link>
