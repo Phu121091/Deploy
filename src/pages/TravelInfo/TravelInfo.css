@@ -681,3 +681,265 @@ div > span:nth-child(2) {
 .contact-yourfriend {
   margin-top: 50px;
 }
+
+.detail-itinerary {
+ width: 100%;
+ align-items: center;
+ justify-content: center;
+ margin-bottom: 25px;
+}
+
+.itinerary-line:after {
+  max-width: 200px;
+  height: 1px;
+  display: block;
+  background-color: #d0b316;
+  margin: 15px auto 12px;
+  content: "";
+  width: 40%;
+}
+
+.itinerary-contents {
+  width: 100%;
+}
+
+.itinerary-options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 24px 0;
+}
+
+.option-expand,
+.option-collapse {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.option-expand {
+  margin-right: 12px;
+}
+
+.option-collapse {
+  margin-left: 12px;
+}
+
+.option-expand span,
+.option-collapse span {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  line-height: 21px;
+  color: #000000;
+  transition: 0.5s;
+}
+
+.option-expand span:hover,
+.option-collapse span:hover {
+  cursor: pointer;
+  color: #d0b316;
+  transition: 0.5s;
+}
+
+.expand {
+  font-size: 24px !important; 
+}
+
+.expand,
+.minus {
+  font-family: "insideTravel";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 14px;
+  color: #d0b316;
+  margin-right: 8px;
+}
+
+.itinderary-days {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 15px;
+} 
+
+.days-list {
+  list-style: none;
+  width: 100%;
+}
+
+.days-list li { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-left: 30px;
+  position: relative;
+  margin-bottom: 24px;
+}
+
+/* .days-list li::before {
+  position: absolute;
+  content: "";
+  display: block;
+  border-left: 1px dashed #c7d0d9;
+  width: 0;
+  height: 100%;
+  z-index: 3;
+  left: 8px;
+  top: 6px;
+} */
+
+.day-tour {
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 0px 10px 8px #ccc;
+  width: 80%;
+  height: 50px;
+}
+
+.day-tour:hover {
+  background-color: #f6f4f0;
+}
+
+.day-tour a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding-right: 3px;
+  padding-left: 3px;
+  margin-bottom: 3px;
+  border-radius: 10px;
+}
+
+.day-tour a h3:hover {
+  color: #d0b316;
+}
+
+.day-tour button{
+  font-family: "insideTravel";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 14px;
+  margin-right: 20px;
+  color: #333;
+}
+
+.day-tour button:hover {
+  color: #d0b316;
+}
+
+a h3 {
+  margin: 0 0 0 12px;
+}
+
+
+.dayTour-content {
+  display: none;
+  width: 75%;
+  margin-top: 18px;
+}
+
+.active {
+  display: flex;
+}
+
+.day-transfer,
+.day-activity,
+.day-experiences,
+.day-meal,
+.day-accomodation {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  border-bottom: 1px solid #96a089;
+}
+
+.content-icon {
+  color: #d0b316;
+  margin-right: 12px;
+  font-size: 24px;
+}
+
+.experiences-content {
+  display: flex;
+  margin-top: 20px;
+}
+
+.experiences-content img {
+  width: 168px;
+  height: 102px;
+}
+
+.experiences-content div {
+  margin-left: 22px;
+  text-align: left;
+}
+
+.experiences-content div span {
+  color: #555555;
+  font-weight: 600 !important;
+  text-align: left !important;
+  justify-content: left;
+}
+
+.transfer-icon {
+  color: #c3bdbd;
+  font-size: 20px;
+  margin-left: 12px;
+}
+
+.day-transfer span,
+.day-activity span,
+.day-experiences span,
+.day-meal span,
+.day-accomodation span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  color: #111111;
+}
+
+.day-activity p {
+  width: 100%;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.transfer-header,
+.activity-header,
+.experiences-header,
+.meal-header,
+.accomodation-header {
+  display: flex;
+  align-items: center;
+  width: 110%;
+  height: 60px;
+  margin-left: 10%;
+}
+
+.activity-header,
+.experiences-header {
+  width: 100%;
+  border-bottom: 1px dotted #96a089;
+  margin-left: 0;
+}
+
+.activity-header span b,
+.meal-header span b,
+.accomodation-header span b {
+  color:#655e55;
+  margin-left: 12px;
+}
+
+
+

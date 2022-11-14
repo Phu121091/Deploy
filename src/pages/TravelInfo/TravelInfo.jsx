@@ -1,10 +1,12 @@
 import { BsCheck2, BsFillTreeFill, BsHeart, BsPeopleFill } from 'react-icons/bs';
 import { MdFoodBank, MdKayaking, MdKeyboardArrowDown } from 'react-icons/md';
-import {BiMap, BiSwim} from 'react-icons/bi';
+import {BiMap, BiSwim, BiCircle, BiTransfer} from 'react-icons/bi';
 import {MdArrowBackIosNew, MdArrowForwardIos} from 'react-icons/md'
 import {RiHotelBedFill} from 'react-icons/ri'
-import {FaBed, FaICursor, FaImages, FaPlane} from 'react-icons/fa'
-import {AiOutlineMail} from 'react-icons/ai'
+import {FaBed, FaImages, FaPlane} from 'react-icons/fa'
+import {IoIosAdd} from 'react-icons/io'
+import {AiOutlineMail, AiOutlineDown, AiFillCar, AiFillBank} from 'react-icons/ai'
+import {HiOutlineMinus} from 'react-icons/hi'
 import './TravelInfo.css';
 import { GiCruiser, GiCultist, GiPagoda, GiSpeedBoat } from 'react-icons/gi';
 
@@ -232,6 +234,211 @@ function TravelInfo() {
                             </ul>
                             <span>Read more ...</span>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div className="detail-itinerary">
+            <h2 className="itinerary-line">DETAILED ITINERARY</h2>
+            <div className="itinerary-contents">
+                <div className="itinerary-options">
+                    <div className="option-expand">
+                        <IoIosAdd className='expand'/>
+                        <span>Expand All</span>
+                    </div>
+                    <div className="option-collapse">
+                        <HiOutlineMinus className='minus'/>
+                        <span>Collapse All</span>
+                    </div>
+                </div>
+                <div className="itinderary-days">
+                    <div className="itinderary-days">
+                        <ul className='days-list'>
+                            <li>
+                                <div className="day-tour">
+                                    <a href="#!">
+                                        {/* <span>
+                                            <BiCircle />
+                                        </span> */}
+                                        <h3>Day 1: Ha Noi</h3>
+                                        <button>
+                                            <AiOutlineDown />
+                                        </button>
+                                    </a>
+                                </div>
+                                <div className="dayTour-content active">
+                                    <div className="day-transfer">
+                                        <div className='transfer-header'>
+                                            <BiTransfer className='content-icon'/>
+                                            <span>Transfer: <AiFillCar className='transfer-icon'/></span>
+                                        </div>
+
+                                    </div>
+                                    <div className="day-activity">
+                                        <div className="activity-header">
+                                            <AiFillBank className='content-icon'/>
+                                            <span>Activities: <b>Arrive in Hanoi, Watch Water Puppet Show, Enjoy Welcome Dinner at local restaurant</b></span>
+                                        </div>
+                                        <p>Welcome to Hanoi, the heart of Vietnam which is considered as a blend between the traditional and the modern beauties. 
+                                            At Noi Bai Airport, our guide and driver will welcome then take you to your hotel to do check-in. 
+                                            After relaxation, our guide will take you walk to the theatre and we will enjoy Water Puppet Show – A traditional art performance of Vietnam. After that, you will enjoy a welcome dinner at local restaurant.
+                                            Overnight in Hanoi.</p>
+                                    </div>
+                                    <div className="day-experiences">
+                                        <div className='experiences-header'>
+                                            <BiTransfer className='content-icon'/>
+                                            <span>Experiences: </span>
+                                        </div>
+                                        <div className="experiences-content">
+                                            <img src="https://d2lwt6tidfiof0.cloudfront.net/uploads/photo-e/destinations/hanoi/water-puppet-show%20(7)650-388.jpg" alt="" />
+                                            <div>
+                                                <span>Watching authentic Water Puppet Show in Hanoi</span>
+                                                <p>Vietnamese Water Puppet Show is a traditional folk art which dates back several centuries.
+                                                    Watching the exceptional show with the puppet moving through water by the skillful puppeters
+                                                    will be a special way to discover the ancient art and the countryside stories in your holiday in Hanoi.
+                                                    The authentic Vietnamese Water Puppet Show will take you through Southeast Asia’s wet-rice culture,
+                                                    a good insight to farming and historical legends with colorful animated puppet and rhythmic melody from traditional instruments.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="day-meal">
+                                        <div className='meal-header'>
+                                            <BiTransfer className='content-icon'/>
+                                            <span>Meals: <b>Dinner</b></span>
+                                        </div>
+                                    </div>
+                                    <div className="day-accomodation">
+                                        <div className='accomodation-header'>
+                                            <BiTransfer className='content-icon'/>
+                                            <span>Accomodation: <b>1 Choice</b></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div className="day-tour">
+                                    <a href="#!">
+                                        {/* <span>
+                                            <BiCircle />
+                                        </span> */}
+                                        <h3>Day 1: Ha Noi</h3>
+                                        <button>
+                                            <AiOutlineDown />
+                                        </button>
+                                    </a>
+                                </div>
+                                <div className="dayTour-content">
+                                    <div className="day-transfer">
+                                        <div className='transfer-header'>
+                                            <BiTransfer className='content-icon'/>
+                                            <span>Transfer: <AiFillCar className='transfer-icon'/></span>
+                                        </div>
+
+                                    </div>
+                                    <div className="day-activity">
+                                        <div className="activity-header">
+                                            <AiFillBank className='content-icon'/>
+                                            <span>Activities: <b>Arrive in Hanoi, Watch Water Puppet Show, Enjoy Welcome Dinner at local restaurant</b></span>
+                                        </div>
+                                        <p>Welcome to Hanoi, the heart of Vietnam which is considered as a blend between the traditional and the modern beauties. 
+                                            At Noi Bai Airport, our guide and driver will welcome then take you to your hotel to do check-in. 
+                                            After relaxation, our guide will take you walk to the theatre and we will enjoy Water Puppet Show – A traditional art performance of Vietnam. After that, you will enjoy a welcome dinner at local restaurant.
+                                            Overnight in Hanoi.</p>
+                                    </div>
+                                    <div className="day-experiences">
+                                        <div className='experiences-header'>
+                                            <BiTransfer className='content-icon'/>
+                                            <span>Experiences: </span>
+                                        </div>
+                                        <div className="experiences-content">
+                                            <img src="https://d2lwt6tidfiof0.cloudfront.net/uploads/photo-e/destinations/hanoi/water-puppet-show%20(7)650-388.jpg" alt="" />
+                                            <div>
+                                                <span>Watching authentic Water Puppet Show in Hanoi</span>
+                                                <p>Vietnamese Water Puppet Show is a traditional folk art which dates back several centuries.
+                                                    Watching the exceptional show with the puppet moving through water by the skillful puppeters
+                                                    will be a special way to discover the ancient art and the countryside stories in your holiday in Hanoi.
+                                                    The authentic Vietnamese Water Puppet Show will take you through Southeast Asia’s wet-rice culture,
+                                                    a good insight to farming and historical legends with colorful animated puppet and rhythmic melody from traditional instruments.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="day-meal">
+                                        <div className='meal-header'>
+                                            <BiTransfer className='content-icon'/>
+                                            <span>Meals: <b>Dinner</b></span>
+                                        </div>
+                                    </div>
+                                    <div className="day-accomodation">
+                                        <div className='accomodation-header'>
+                                            <BiTransfer className='content-icon'/>
+                                            <span>Accomodation: <b>1 Choice</b></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div className="day-tour">
+                                    <a href="#!">
+                                        {/* <span>
+                                            <BiCircle />
+                                        </span> */}
+                                        <h3>Day 1: Ha Noi</h3>
+                                        <button>
+                                            <AiOutlineDown />
+                                        </button>
+                                    </a>
+                                </div>
+                                <div className="dayTour-content">
+                                    <div className="day-transfer">
+                                        <div className='transfer-header'>
+                                            <BiTransfer className='content-icon'/>
+                                            <span>Transfer: <AiFillCar className='transfer-icon'/></span>
+                                        </div>
+
+                                    </div>
+                                    <div className="day-activity">
+                                        <div className="activity-header">
+                                            <AiFillBank className='content-icon'/>
+                                            <span>Activities: <b>Arrive in Hanoi, Watch Water Puppet Show, Enjoy Welcome Dinner at local restaurant</b></span>
+                                        </div>
+                                        <p>Welcome to Hanoi, the heart of Vietnam which is considered as a blend between the traditional and the modern beauties. 
+                                            At Noi Bai Airport, our guide and driver will welcome then take you to your hotel to do check-in. 
+                                            After relaxation, our guide will take you walk to the theatre and we will enjoy Water Puppet Show – A traditional art performance of Vietnam. After that, you will enjoy a welcome dinner at local restaurant.
+                                            Overnight in Hanoi.</p>
+                                    </div>
+                                    <div className="day-experiences">
+                                        <div className='experiences-header'>
+                                            <BiTransfer className='content-icon'/>
+                                            <span>Experiences: </span>
+                                        </div>
+                                        <div className="experiences-content">
+                                            <img src="https://d2lwt6tidfiof0.cloudfront.net/uploads/photo-e/destinations/hanoi/water-puppet-show%20(7)650-388.jpg" alt="" />
+                                            <div>
+                                                <span>Watching authentic Water Puppet Show in Hanoi</span>
+                                                <p>Vietnamese Water Puppet Show is a traditional folk art which dates back several centuries.
+                                                    Watching the exceptional show with the puppet moving through water by the skillful puppeters
+                                                    will be a special way to discover the ancient art and the countryside stories in your holiday in Hanoi.
+                                                    The authentic Vietnamese Water Puppet Show will take you through Southeast Asia’s wet-rice culture,
+                                                    a good insight to farming and historical legends with colorful animated puppet and rhythmic melody from traditional instruments.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="day-meal">
+                                        <div className='meal-header'>
+                                            <BiTransfer className='content-icon'/>
+                                            <span>Meals: <b>Dinner</b></span>
+                                        </div>
+                                    </div>
+                                    <div className="day-accomodation">
+                                        <div className='accomodation-header'>
+                                            <BiTransfer className='content-icon'/>
+                                            <span>Accomodation: <b>1 Choice</b></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
