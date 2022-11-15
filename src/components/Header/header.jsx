@@ -19,6 +19,9 @@ import MobileMenu from "./MobileMenu";
 
 const Header = () => {
 
+  const User = useContext(UserContext);
+
+
   const [showfind,setshowfind]=useState('hidden');
   const [showlog,setshowlog] =useState('hidden');
 
@@ -32,7 +35,7 @@ const Header = () => {
 
   const handleLogout = () => {
     user.change(null);
-    navigate("/log-in", { replace: true });
+    navigate("/LogIn", { replace: true });
   };
 //design link active
   const handleActive = ({ isActive }) => {
@@ -188,11 +191,11 @@ const Header = () => {
       (
         <div className="log">
           
-          <BsSuitHeart/>
+          <Link to='/UserInfor'>
           {user.username.admin?<GrUserAdmin/>:<BsPerson/>}
-          <Link to='/User' className="sign">{user.username.userName}</Link>
-          <button className="logout" onClick={handleLogout}>Đăng xuất</button>
-          <Link to="/Dangtin" className="post" >Đăng tin</Link>
+          </Link>
+
+          <button className="logout" onClick={handleLogout}>Logout</button>
         </div>
 
       ) :
@@ -215,7 +218,7 @@ const Header = () => {
         <Link to='/SignUp' className="log-link">Register</Link>
       </div>
 
-      <MobileMenu showmobile={showmobile}/>
+      <MobileMenu showmobile={showmobile} user={User}/>
     
     </div>
   )

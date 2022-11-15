@@ -21,7 +21,7 @@
     object-fit: cover;
     transition: 0.3s;
     overflow: hidden;
-    
+    position: relative;
 }
 .hot-box img{
     width: 100%;
@@ -30,6 +30,9 @@
 }
 .hot-box:hover img{
    transform: scale(1.04);
+}
+.hot-box:hover .main-hotbox{
+    bottom: 0%;
 }
 .hot1{
     width: 58%;
@@ -85,6 +88,31 @@
 .hot-title:hover .hr-hot{
     width: 60% ;
 }
+.title-before{
+    color: white;
+    position: absolute;
+    bottom: 0%;
+    padding:10px;
+    background-color: rgb(4, 4, 4,0.7);
+    width: 100%;
+    margin-bottom: 0;
+}
+.main-hotbox{
+    position: absolute;
+    width: 100%;
+    bottom: -100%;
+    transition: 0.5s;
+}
+.title-after{
+ text-align: center !important;
+ width: 100%;
+}
+.main-hotbox {
+   text-align: start;
+   padding: 5% 10% 5% 10%;
+   background-color: white;
+
+}
 @keyframes title {
     0%{
        left:20%;
@@ -105,8 +133,11 @@
 @media only screen and  (max-width: 850px) {
     .hot-box{
         width: 100% !important;
-        height: 250px;
+        height: 300px;
         flex: auto;
+    }
+    .hot-grid1,.hot-grid2{
+        flex-direction: column;
     }
     .hot-title{
         font-size: 25px;

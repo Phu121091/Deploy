@@ -24,6 +24,7 @@ import CustomerFeedback from "./pages/CustomerFeedback/CustomerFeedback";
 import Tourlist from "./pages/Tourlist/Tourlist";
 import Destination from "./pages/Destination/Destination";
 import Feedback from "./pages/Home/Feedback/Feedback";
+import UserInfor from "./pages/UserInfor/UserInfor";
 
  
 function App() {
@@ -48,7 +49,8 @@ function App() {
       <Route path="/CustomerFeedback" element={<CustomerFeedback />} />
       <Route path="/Blog" element={<Blog />} />
       <Route path=':id' element={<Tourlist/>}/>
-      </Routes>
+      <Route path="/UserInfor" element={<UserInfor/>}/>
+      </Routes> 
       </Layout> 
       </BrowserRouter>
       <ToastContainer/>

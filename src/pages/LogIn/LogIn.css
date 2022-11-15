@@ -222,7 +222,15 @@ span>a:hover {
 }
 
 .image {
-  width: 600px;
-  height: 600px;
+  width: 50%;
+  height: 50%;
   margin-left: 150px;
+}
+
+
+.aa{
+  height: 500px;
+}
+.loginput{
+  border: 1px solid black !important;
 }
