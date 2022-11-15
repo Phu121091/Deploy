@@ -1,6 +1,6 @@
 import { BsCheck2, BsFillTreeFill, BsHeart, BsPeopleFill } from 'react-icons/bs';
 import { MdFoodBank, MdKayaking, MdKeyboardArrowDown } from 'react-icons/md';
-import {BiMap, BiSwim, BiCircle, BiTransfer} from 'react-icons/bi';
+import {BiMap, BiSwim, BiTransfer} from 'react-icons/bi';
 import {MdArrowBackIosNew, MdArrowForwardIos} from 'react-icons/md'
 import {RiHotelBedFill} from 'react-icons/ri'
 import {FaBed, FaImages, FaPlane} from 'react-icons/fa'
@@ -9,6 +9,7 @@ import {AiOutlineMail, AiOutlineDown, AiFillCar, AiFillBank} from 'react-icons/a
 import {HiOutlineMinus} from 'react-icons/hi'
 import './TravelInfo.css';
 import { GiCruiser, GiCultist, GiPagoda, GiSpeedBoat } from 'react-icons/gi';
+import TravelDetail from './TravelDetail/TravelDetail'
 
 function TravelInfo() {
     return ( <div className="wrapper">
@@ -216,6 +217,7 @@ function TravelInfo() {
                         </div>
                     </div>
                 </div>
+                <TravelDetail/>
                 <div className="tour-highlights">   
                     <h2 className="highlight-line">HIGHLIGHTS OF THIS TOUR</h2>
                     <div className='hightlight-content'>
@@ -516,11 +518,10 @@ function TravelInfo() {
                 </div>
             </div>
         </div>
-
+        
         <div className="contact-yourfriend">
             <h2>Share your friends</h2>
         </div>
-
     </div> );
 }
 

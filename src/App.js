@@ -24,6 +24,12 @@ import CustomerFeedback from "./pages/CustomerFeedback/CustomerFeedback";
 import Tourlist from "./pages/Tourlist/Tourlist";
 import Destination from "./pages/Destination/Destination";
 import Feedback from "./pages/Home/Feedback/Feedback";
+import AboutUs from "./pages/Home/AboutUs/AboutUs";
+import Policy from './pages/Home/Policy/Policy';
+import Privacy from './pages/Home/Privacy/Privacy';
+import Payment from './pages/Home/Payment/Payment';
+import PaymentGate from './pages/Home/PaymentGateWay/PaymentGate'
+import Affiliates from "./pages/Home/Affiliates/Affiliates";
 
  
 function App() {
@@ -47,6 +53,11 @@ function App() {
       <Route path='/Destination/Campuchia' element={<Campuchia/>}/>
       <Route path="/CustomerFeedback" element={<CustomerFeedback />} />
       <Route path="/Blog" element={<Blog />} />
+      <Route path="/AboutUs" element={<AboutUs />} />
+      <Route path="/Policy" element={<Policy />} />
+      <Route path="/Privacy" element={<Privacy />} />
+      <Route path="/Payment" element={<PaymentGate />} />
+      <Route path="/Affiliates" element={<Affiliates />} />
       <Route path=':id' element={<Tourlist/>}/>
       </Routes>
       </Layout> 
