@@ -15,6 +15,7 @@ const TourItemlist = ({status,data}) => {
   return (
     <div className={`simpletour-1 ${status}`} key={data.id}>
           <div className='top-container'>
+            
             <div className="box-1">
               <img className='box-img' src={Img1} alt="" />
             </div>
