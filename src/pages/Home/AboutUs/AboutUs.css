@@ -8,13 +8,12 @@
     font-size: 40px;   
 }
 .au-main{
-    display: flex;
-    justify-content: center;
     align-items:flex-start;
+    justify-content: center;
 }
 .au-p{
-    width: 90%;
-
+    width: 100%;
+    text-align: left;
 }
 .au-img{
     width: 100%;
@@ -24,4 +23,17 @@
     .au-p{
         font-size: 12px;
     }
+}
+
+.au-exceptional,
+.au-reliable,
+.au-plan {
+    margin-bottom: 25px;
+}
+
+.au-exceptional h3,
+.au-reliable h3,
+.au-plan h3 {
+    text-align: left;
+    margin-bottom: 1em;
 }
