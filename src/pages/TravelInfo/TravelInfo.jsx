@@ -9,10 +9,32 @@ import {AiOutlineMail, AiOutlineDown, AiFillCar, AiFillBank} from 'react-icons/a
 import {HiOutlineMinus} from 'react-icons/hi'
 import './TravelInfo.css';
 import { GiCruiser, GiCultist, GiPagoda, GiSpeedBoat } from 'react-icons/gi';
-import TravelDetail from './TravelDetail/TravelDetail'
+import TravelDetail from './TravelDetail/TravelDetail';
+import Data from '../../data/tourlist.json';
+import { useParams } from 'react-router-dom';
+import BookTour from './BookTour/BookTour';
+import {UserContext} from '../../components/Layout';
+import { useState,useContext } from 'react';
+import { useNavigate } from 'react-router-dom';
+
+
 
 function TravelInfo() {
-    return ( <div className="wrapper">
+    
+    const navigate = useNavigate();
+    const param = useParams();
+    const TourLoad = Data.find((d)=>d.id==param.id);
+    const User = useContext(UserContext);
+
+    const Booktour = () => {
+        {User.username?User.change({...User.username,book:`${TourLoad}`}):navigate("/LogIn", { replace: true })};
+    }
+
+
+    
+    return ( 
+   
+    <div className="wrapper">
         <div className="banner-info">
             <div className="banner-img">
                 <img className='ban-img' src="https://d2lwt6tidfiof0.cloudfront.net/uploads/photo-tour/vietnam-highlights854-1389-570.jpg" alt="" />
@@ -42,7 +64,7 @@ function TravelInfo() {
         </div>
         <div className="tour-address">
             <div className='travel-intro'>
-                <span className='travel-title'>VietNam - The Land of Timeless Charm</span>
+                <span className='travel-title'>{TourLoad?TourLoad.title:'VietNam - The Land of Timeless Charm'}</span>
                 <img src="https://d2lwt6tidfiof0.cloudfront.net/images/destination/vietnam.jpg" alt="" />
             </div>
             <div className="travel-local">
@@ -240,8 +262,8 @@ function TravelInfo() {
                 </div>
             </div>
         </div>
-
-        <div className="detail-itinerary">
+           {/* <button  onClick={()=>Booktour()}>BOOK NOW!</button> */}
+        {/* <div className="detail-itinerary">
             <h2 className="itinerary-line">DETAILED ITINERARY</h2>
             <div className="itinerary-contents">
                 <div className="itinerary-options">
@@ -259,11 +281,11 @@ function TravelInfo() {
                         <ul className='days-list'>
                             <li>
                                 <div className="day-tour">
-                                    <a href="#!">
+                                    <a href="#!"> */}
                                         {/* <span>
                                             <BiCircle />
                                         </span> */}
-                                        <h3>Day 1: Ha Noi</h3>
+                                        {/* <h3>Day 1: Ha Noi</h3>
                                         <button>
                                             <AiOutlineDown />
                                         </button>
@@ -320,11 +342,11 @@ function TravelInfo() {
                             </li>
                             <li>
                                 <div className="day-tour">
-                                    <a href="#!">
+                                    <a href="#!"> */}
                                         {/* <span>
                                             <BiCircle />
                                         </span> */}
-                                        <h3>Day 1: Ha Noi</h3>
+                                        {/* <h3>Day 1: Ha Noi</h3>
                                         <button>
                                             <AiOutlineDown />
                                         </button>
@@ -381,11 +403,11 @@ function TravelInfo() {
                             </li>
                             <li>
                                 <div className="day-tour">
-                                    <a href="#!">
+                                    <a href="#!"> */}
                                         {/* <span>
                                             <BiCircle />
                                         </span> */}
-                                        <h3>Day 1: Ha Noi</h3>
+                                        {/* <h3>Day 1: Ha Noi</h3>
                                         <button>
                                             <AiOutlineDown />
                                         </button>
@@ -444,9 +466,9 @@ function TravelInfo() {
                     </div>
                 </div>
             </div>
-        </div>
+        </div> */}
 
-        <div className="your-choice">
+        {/* <div className="your-choice">
             <h2 className="yourchoice-line">CHOOSE YOUR BEST CHOICE</h2>
             <div className="tour-choices">
                 <div className="tour-choice">
@@ -498,7 +520,8 @@ function TravelInfo() {
                     </div>
                 </div>
             </div>
-        </div>
+        </div> */}
+        <BookTour onClick={Booktour()}/> 
 
         <div className="tailormade">
             <div className="tailormade-team">
@@ -522,7 +545,8 @@ function TravelInfo() {
         <div className="contact-yourfriend">
             <h2>Share your friends</h2>
         </div>
-    </div> );
+    </div> 
+    );
 }
 
 export default TravelInfo;

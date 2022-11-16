@@ -87,7 +87,7 @@ const TourItemlist = ({status,data}) => {
               </div>
             </div>
             <div className="tour-explore">
-              <Link to="/TravelInfo">EXPLORE THIS TRIP</Link>
+              <Link to={`/TravelInfo/${data.id}`}>EXPLORE THIS TRIP</Link>
               <BsHeart className='tour-heart'/>
             </div>
           </div>

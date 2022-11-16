@@ -30,6 +30,7 @@ import Privacy from './pages/Home/Privacy/Privacy';
 import Payment from './pages/Home/Payment/Payment';
 import PaymentGate from './pages/Home/PaymentGateWay/PaymentGate'
 import Affiliates from "./pages/Home/Affiliates/Affiliates";
+import UserInfor from "./pages/UserInfor/UserInfor";
 
  
 function App() {
@@ -44,7 +45,7 @@ function App() {
       <Route path="/LogIn" element={<LogIn />} />
       <Route path="/SignUp" element={<SignUp />} />
       <Route path="/ShopInfor" element={<ShopInfor />} />
-      <Route path="/TravelInfo" element={<TravelInfo />} />
+      <Route path="/TravelInfo/:id" element={<TravelInfo />} />
       <Route path="/Feedback" element={<Feedback />} />
       <Route path='/TripFinder' element={<TripFinder/>}/>
       <Route path='/Destination/Vietnam' element={<Vietnam/>}/>

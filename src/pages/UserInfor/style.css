@@ -44,19 +44,37 @@
     color: darkgoldenrod;
 }
 
+.user-main-body{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: 0 auto;
+    /* border: 1px solid silver; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
 .type-tour-user{
     width: 100%;
-    border-top: 2px solid rgb(225, 224, 224);
-    border-bottom: 2px solid rgb(230, 229, 229);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /* border-top: 2px solid rgb(225, 224, 224);
+    border-bottom: 2px solid rgb(230, 229, 229); */
     display: flex;
-    padding:0 5%;
-    margin: 5% 0;
+    /* flex-direction: column; */
+    /* border: 1px solid silver; */
+    
 }
 .type-tour-user p{
     padding: 20px;
     text-align: center;
     margin-bottom: 0px;
 }
+.list-tour-user{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
 .picked{
     background-color: slategray;
     color: white;
@@ -96,6 +114,64 @@
     justify-content: center;
     align-items: flex-end;
 }
+
+.touritembook{
+    flex: 1;
+}
+.touritembook h1{
+    
+    font-size: 20px;
+    color: dimgray;
+    border-radius: 5px;
+}
+.tourbook-infor{
+    width:95% ;
+    margin: 2% auto;
+}
+.sort{
+    flex: 1;
+    
+
+}
+.sort p{
+    text-align: start;
+    padding:10px ;
+    padding-bottom: 5px;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-bottom: 1px solid silver;
+    margin-bottom: 0px !important;
+}
+.sdestination{
+    width: 40%;
+}
+
+.confirm-container{
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 2%;
+}
+.title-mini-user{
+    text-align: start;
+    width: 95%;
+    margin: 0 auto;
+}
+.area-confirm{
+    width: 100%;
+    border-color: silver;
+    outline: none;
+    padding: 10px;
+}
+.send-confirm{
+    display: block;
+    padding: 20px 40px;
+    /* border: 1px solid silver !important; */
+    color: white;
+    background-color: darkgoldenrod;
+    border-radius: 10px;
+}
+
 
 @media only screen and  (max-width: 850px) {
 .user-infor-container{

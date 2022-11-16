@@ -5,9 +5,11 @@ import { UserContext } from '../Layout';
 
 
 const MobileMenu = ({showmobile,user}) => {
-
+  
   const User =useContext(UserContext);
   const navigate = useNavigate();
+  const location = useLocation();
+
   const handleLogout = () => {
     User.change(null);
     navigate("/", { replace: true });
@@ -20,7 +22,9 @@ const MobileMenu = ({showmobile,user}) => {
   const Showlistmb4 = () => {listmb[3]=='20px'?setlistmb(['0px','0px','0px','0px','0px','0px']):setlistmb(['0px','0px','0px','20px','0px','0px'])};
   const Showlistmb5 = () => {listmb[4]=='20px'?setlistmb(['0px','0px','0px','0px','0px','0px']):setlistmb(['0px','0px','0px','0px','20px','0px'])};
   const Showlistmb6 = () => {listmb[5]=='20px'?setlistmb(['0px','0px','0px','0px','0px','0px']):setlistmb(['0px','0px','0px','0px','0px','20px'])};
+  
 
+  console.log(User,user);
   return (
     <div className="menu-mobile" style={{display:`${showmobile}`}}>
         <p className="title-mobile" onClick={()=>Showlistmb1()}>Destination</p>
@@ -64,10 +68,10 @@ const MobileMenu = ({showmobile,user}) => {
         </div>
         <p className='title-mobile' onClick={()=>Showlistmb6()}>User</p>
         <div className='user-list-mobile'>
-          {user==null?
+          {user.username!==null?
           <div>
           <Link to='/UserInfor' style={{height:`${listmb[5]}`}}>Infor</Link>
-          <Link style={{height:`${listmb[5]}`}} onClick={()=>handleLogout()}>Logout</Link>
+          <Link to='/' style={{height:`${listmb[5]}`}} onClick={()=>handleLogout()}>Logout</Link>
           </div>
           :
           <div>
