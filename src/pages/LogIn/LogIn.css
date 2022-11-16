@@ -48,12 +48,6 @@
   margin-top: 20px;
 }
 
-.form-group {
-  display: flex;
-  margin-bottom: 16px;
-  flex-direction: column;
-}
-
 .form-label,
 .form-message {
   text-align: left;
@@ -222,7 +216,15 @@ span>a:hover {
 }
 
 .image {
-  width: 600px;
-  height: 600px;
+  width: 50%;
+  height: 50%;
   margin-left: 150px;
+}
+
+
+.aa{
+  height: 500px;
+}
+.loginput{
+  border: 1px solid black !important;
 }

@@ -1,49 +1,7 @@
 .hot-tour{
     margin-top: 3%;
 }
-.hot-grid{
-    display: flex;
-    flex-direction: column;
 
-}
-.hot-grid1{
-    display: flex;
-}
-.hot-grid2{
-    display: flex;
-}
-.hot-box{
-    height: 200px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-    background-image: url('https://th.bing.com/th/id/OIP.2JxPqLrCfMsE5zSpN5CcTAHaEe?w=292&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7');
-    background-size: cover;
-    background-position: center;
-    object-fit: cover;
-    transition: 0.3s;
-    overflow: hidden;
-    
-}
-.hot-box img{
-    width: 100%;
-    height: 100%;
-    transition: 0.5s;
-}
-.hot-box:hover img{
-   transform: scale(1.04);
-}
-.hot1{
-    width: 58%;
-    height: 400px;
-}
-.hot2{
-    width: 42%;
-    height: 400px;
-}
-.hot3,.hot4,.hot5{
-    width: 29%;
-    flex: 1;
-    height: 300px;
-}
 .hot-container{
     margin: 2% auto;
     display: flex;
@@ -52,6 +10,7 @@
     align-items: center;
     width: 60%;
 }
+
 .hot-title{
     text-align: center;
     width: 100%;
@@ -63,13 +22,16 @@
     left:0%;
     animation: title forwards 2s;
 }
-.hot-main{
-    margin-top: 20px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    color: #666666;
-    text-align: center;
+
+.hot-title:hover{
+    text-shadow: 5px 0px 5px rgb(0, 0, 0,0.5);
+    color:darkgoldenrod;
 }
+
+.hot-title:hover .hr-hot{
+    width: 60% ;
+}
+
 .hr-hot{
     width: 25%;
     border:2px solid darkgoldenrod;
@@ -78,13 +40,161 @@
     text-align: center;
     margin: 0 auto;
 }
-.hot-title:hover{
-    text-shadow: 5px 0px 5px rgb(0, 0, 0,0.5);
-    color:darkgoldenrod;
+
+.hot-main{
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #666666;
+    text-align: center;
 }
-.hot-title:hover .hr-hot{
-    width: 60% ;
+
+.hot-grid{
+    display: flex;
+    flex-direction: column;
+
 }
+
+.hot-grid1{
+    display: flex;
+}
+
+.hot-grid2{
+    display: flex;
+}
+
+.hot-box{
+    height: 200px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    background-image: url('https://th.bing.com/th/id/OIP.2JxPqLrCfMsE5zSpN5CcTAHaEe?w=292&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7');
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    transition: 0.3s;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.hot-box img{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.hot-box:hover img{
+   transform: scale(1.04);
+}
+
+.hot-box:hover .main-hotbox{
+    bottom: 0%;
+}
+
+.rs-ic {
+    font-size: 18px;
+}
+
+.hot1{
+    width: 58%;
+    height: 400px;
+}
+
+.hot2{
+    width: 42%;
+    height: 400px;
+}
+
+.hot3,.hot4,.hot5{
+    width: 29%;
+    flex: 1;
+    height: 300px;
+}
+
+.hot3 .title-before,
+.hot4 .title-before,
+.hot5 .title-before {
+    color: white;
+    position: absolute;
+    font-size: 22px;
+    bottom: 0%;
+    padding:10px;
+    background-color: rgb(4, 4, 4,0.7);
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.hot3 .title-after,
+.hot4 .title-after,
+.hot5 .title-after{
+    font-size: 22px;
+    text-align: center !important;
+    width: 100%;
+    color: #d0b316;
+}
+
+.hot3 .hot-tour--content div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.hot4 .hot-tour--content div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.hot5 .hot-tour--content div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.title-before{
+    color: white;
+    position: absolute;
+    bottom: 0%;
+    padding:10px;
+    background-color: rgb(4, 4, 4,0.7);
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.main-hotbox{
+    position: absolute;
+    width: 100%;
+    bottom: -100%;
+    transition: 0.5s;
+    text-align: start;
+    padding: 5% 10% 3% 10%;
+    background-color: white;
+}
+
+.title-after{
+ text-align: center !important;
+ width: 100%;
+ color: #d0b316;
+ border-bottom: 2px solid #d0b316;
+}
+
+.hot-tour--content div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.hot-tour--content div span {
+    font-size: 16px !important;
+}
+
 @keyframes title {
     0%{
        left:20%;
@@ -102,11 +212,15 @@
         height: 200px;
     }
 }
+
 @media only screen and  (max-width: 850px) {
     .hot-box{
         width: 100% !important;
-        height: 250px;
+        height: 300px;
         flex: auto;
+    }
+    .hot-grid1,.hot-grid2{
+        flex-direction: column;
     }
     .hot-title{
         font-size: 25px;

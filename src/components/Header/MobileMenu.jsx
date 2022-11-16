@@ -1,8 +1,17 @@
 import React from 'react';
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink,Link, useNavigate, useLocation } from "react-router-dom";
+import { useEffect ,useState ,useContext } from "react";
+import { UserContext } from '../Layout';
 
-const MobileMenu = ({showmobile}) => {
+
+const MobileMenu = ({showmobile,user}) => {
+
+  const User =useContext(UserContext);
+  const navigate = useNavigate();
+  const handleLogout = () => {
+    User.change(null);
+    navigate("/", { replace: true });
+  };
 
   const [listmb,setlistmb] = useState(['0px','0px','0px','0px','0px','0px']);
   const Showlistmb1 = () => {listmb[0]=='20px'?setlistmb(['0px','0px','0px','0px','0px','0px']):setlistmb(['20px','0px','0px','0px','0px','opx'])};
@@ -55,8 +64,17 @@ const MobileMenu = ({showmobile}) => {
         </div>
         <p className='title-mobile' onClick={()=>Showlistmb6()}>User</p>
         <div className='user-list-mobile'>
+          {user==null?
+          <div>
+          <Link to='/UserInfor' style={{height:`${listmb[5]}`}}>Infor</Link>
+          <Link style={{height:`${listmb[5]}`}} onClick={()=>handleLogout()}>Logout</Link>
+          </div>
+          :
+          <div>
           <Link to='/LogIn' style={{height:`${listmb[5]}`}}>Log In</Link>
           <Link to='/SignUp' style={{height:`${listmb[5]}`}}>Sign Up</Link>
+          </div>}
+          
         </div>
         <Link to='/TripFinder' className='link-finder-mobile'>Trip Finder</Link>
       </div>

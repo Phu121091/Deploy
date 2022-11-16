@@ -45,12 +45,6 @@
   margin-top: 20px;
 }
 
-.form-group {
-  display: flex;
-  margin-bottom: 16px;
-  flex-direction: column;
-}
-
 .form-label,
 .form-message {
   text-align: left;

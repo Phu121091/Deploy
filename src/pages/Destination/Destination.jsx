@@ -23,6 +23,19 @@ const Destination = () => {
 
   return (
     <div>
+      {/* <div className="banner-picture">
+        <div className="title-travelstyle">Viet Nam</div>
+        
+      </div>
+      <div className="are-main">
+      <div className="page-up">
+          <div className="title-top"> See The World Together</div>
+          <div className="middle-page"> 
+          Việt Nam, tên gọi chính thức là Cộng hòa Xã hội Chủ nghĩa Việt Nam, là một quốc gia nằm ở cực Đông của bán đảo Đông Dương thuộc khu vực Đông Nam Á, giáp với Lào, Campuchia, Trung Quốc, biển Đông và vịnh Thái Lan.
+          </div>
+          <div className="end-page"> Look By Eyes- Feel By Heart </div>
+        </div>
+        </div> */}
       <div className="header-vietnam">
         <div className="top-body">
           <div className="thead pleft "></div>
@@ -34,7 +47,14 @@ const Destination = () => {
           Viet Nam - Ve dep tiem an trong moi con nguoi
         </div>
       </div>
-      <div className="body-vietnam">
+      
+
+
+
+
+
+
+      {/* <div className="body-vietnam">
         <div className="box-area">
           <div className="title-vietnam">
             <div className="titile-top"> Plane Your Travel</div>
@@ -205,7 +225,7 @@ const Destination = () => {
       </div>
       <div className="seemore">
         <div className="a0008"><a href="/">See More Tour In Viet Nam  </a></div> 
-      </div>
+      </div> */}
     </div>
   );
 };

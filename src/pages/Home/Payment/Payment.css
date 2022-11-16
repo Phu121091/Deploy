@@ -5,6 +5,7 @@
 }
 
 .payment {
+  width: 38%;
   background: #fff;
   padding: 24px 48px 24px 48px;
   border-radius: 2px;
@@ -13,8 +14,7 @@
   box-shadow: 0 2px 5px 0 rgba(51, 62, 73, 0.1);
 }
 
-.form {
-  width: 94%;
+.form-payment {
   min-height: 100px;
   text-align: center;
 }
@@ -43,20 +43,19 @@
   margin-top: 20px;
 }
 
-.form-group {
-  display: flex;
-  margin-bottom: 16px;
-  flex-direction: column;
-}
-
 .form-group ul {
-    list-style: none;
-    text-align: left;
-    margin-left: 12px;
+  list-style: none;
+  text-align: left;
+  margin-left: 12px;
 }
 
 .form-group ul li {
-    
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 12px;
 }
 
 .form-label,
@@ -72,8 +71,12 @@
 }
 
 .form-method {
-  display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+.method-options{
+  display: flex;
   justify-content: space-between;
 }
 
@@ -83,34 +86,101 @@
 }
 
 .method-option {
-    margin-left: 8px;
-    font-size: 45px;
+  margin-left: 8px;
+  font-size: 45px;
 }
 
-.form-control {
+.method-visa {
+  display: none;
+  flex-direction: column;
+  text-align: left;
+  width: 100%;
+}
+
+.active {
+  display: flex;
+}
+
+.visa-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.visa-content div{
+  display: flex;
+  justify-content: space-between;
+}
+
+.visa-name div,
+.visa-number div,
+.visa-date div {
+  flex-direction: column;
+  width: 50%;
+}
+
+.visa-name div:nth-child(1),
+.visa-number div:nth-child(1),
+.visa-date div:nth-child(1) {
+  margin-right: 25px;
+}
+
+.method-paypal {
+  display: none !important;
+  flex-direction: column;
+}
+
+.buyer-name {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.buyer-name div {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.buyer-name div:nth-child(1) {
+  margin-right: 25px;
+}
+
+.ship-city {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ship-city div {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.ship-city div:nth-child(1) {
+  margin-right: 25px;
+}
+
+.form-control--payment {
   height: 40px;
   padding: 8px 12px;
-  border: 1px solid #b3b3b3;
+  border: 1px solid #b3b3b3 !important;
   border-radius: 3px;
   outline: none;
   font-size: 0.8rem;
 }
 
-.form-tour {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.form-message {
-  font-size: 1.2rem;
+.form-message--payment {
+  font-size: 0.8rem !important;
+  font-weight: 400 !important;
   line-height: 1.6rem;
-  padding: 4px 0 0;
+  text-align: left;
+  margin-bottom: 12px;
 }
 
 .form-submit {
   outline: none;
-  background-color: #12877c;
+  background-color: #b8bd30;
   margin-top: 12px;
   padding: 12px 16px;
   font-weight: 600;
@@ -120,45 +190,4 @@
   font-size: 14px;
   border-radius: 4px;
   cursor: pointer;
-}
-
-.form-options {
-  display: flex;
-  align-items: center;
-  color: #747373;
-  font-size: 0.9rem;
-  font-weight: 500;
-  margin: 24px 0 24px 0;
-}
-
-.form-option-group {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.form-option {
-  color: white;
-  font-weight: 500;
-  width: 150px;
-  height: 48px;
-  border-radius: 4px;
-  margin: 0 12px 12px 0;
-}
-
-.form-option:nth-child(1) {
-  background-color: #0f549a;
-}
-
-.form-option:nth-child(2) {
-  background-color: #c82535;
-}
-
-.form-option:nth-child(3) {
-  background-color: #377ba1;
-}
-
-.form-option:nth-child(4) {
-  background-color: #0058ff;
 }

@@ -34,7 +34,24 @@ const Vietnam = () => {
           Viet Nam - Ve dep tiem an trong moi con nguoi
         </div>
       </div>
-      <div className="body-vietnam">
+
+
+{/* Tiêu đề  */}
+<div className="banner-picture">
+        <div className="title-travelstyle">Viet Nam</div>
+        {/* <div className="detail-travelstyle"> Việt Nam - Timeless Charm </div> */}
+      </div>
+      <div className="are-main">
+      <div className="page-up">
+          <div className="title-top"> See The World Together</div>
+          <div className="middle-page"> 
+          Classic products of VNXpedia spread throughout the length of the country and with two neighboring countries Cambodia and Laos. The opportunity to experience the fusion of tour types in this suite is considered the most prominent feature of our brand. You will be surprised to choose one of the programs below.
+          </div>
+          <div className="end-page"> Look By Eyes- Feel By Heart </div>
+        </div>
+        </div>
+
+      {/* <div className="body-vietnam">
         <div className="box-area">
           <div className="title-vietnam">
             <div className="titile-top"> Plane Your Travel</div>
@@ -205,7 +222,7 @@ const Vietnam = () => {
       </div>
       <div className="seemore">
         <div className="a0008"><a href="/">See More Tour In Viet Nam  </a></div> 
-      </div>
+      </div> */}
     </div>
   );
 };
