@@ -1,9 +1,12 @@
 import React from "react";
 import { useState } from "react";
 import "./Vietnam.css";
+import data from '../../data/location.json';
 
 const Vietnam = () => {
   const [slide, setSlide] = useState(1);
+
+  const [city, setCity] = useState(data[0].describe[0]);
 
   const handleSlider = () => {
     if(slide === 1) {
@@ -36,195 +39,215 @@ const Vietnam = () => {
       </div>
 
 
-{/* Tiêu đề  */}
-<div className="banner-picture">
-        <div className="title-travelstyle">Viet Nam</div>
+      {/* Tiêu đề  */}
+      <div className="banner-picture">
+        <div className="title-travelstyle">{data[0].title}</div>
         {/* <div className="detail-travelstyle"> Việt Nam - Timeless Charm </div> */}
       </div>
       <div className="are-main">
-      <div className="page-up">
-          <div className="title-top"> See The World Together</div>
-          <div className="middle-page"> 
-          Classic products of VNXpedia spread throughout the length of the country and with two neighboring countries Cambodia and Laos. The opportunity to experience the fusion of tour types in this suite is considered the most prominent feature of our brand. You will be surprised to choose one of the programs below.
+        <div className="page-up">
+          <div className="city">
+              <div className="title-top">{data[0].city}</div>
+              <span>{data[0].destinations}</span>
           </div>
-          <div className="end-page"> Look By Eyes- Feel By Heart </div>
-        </div>
-        </div>
-
-      {/* <div className="body-vietnam">
-        <div className="box-area">
-          <div className="title-vietnam">
-            <div className="titile-top"> Plane Your Travel</div>
-            <div className="title-bottom"> Where you go next?</div>
+          <div className="cityTour-content"> 
+            <div className="">{data[0].describe[0].name}</div>
+            <div>{data[0].describe[0].title}</div>
+            <div>{data[0].describe[0].highlights}</div>
+            <img src={data[0].describe[0].img.url} alt="" />
           </div>
         </div>
-        <div className="picture-area">
-          <div className="space">
-            <div className="space-title">Northern</div>
+        <div className="page-up">
+          <div className="city">
+              <div className="title-top">{data[1].city}</div>
+              <span>{data[1].destinations}</span>
           </div>
-          <div className="space">
-            <div className="space-title">Central</div>
+          <div className="cityTour-content"> 
+            <div className="">{data[1].describe[1].name}</div>
+            <div>{data[1].describe[1].title}</div>
+            <div>{data[1].describe[1].highlights}</div>
+            <img src={data[1].describe[1].img.url} alt="" />
           </div>
-          <div className="space">
-            <div className="space-title">South</div>
-            </div>
         </div>
+        <div className="end-page"> Look By Eyes- Feel By Heart </div>
       </div>
-      <div className="info-region">
-        <div className="title-vietnam">
-          <div className="titile-top"> Let's i tell you</div>
-          <div className="title-bottom"> Some where you can like it!</div>
-        </div>
-        <div className="picture-region">
-          <div className="a000001 s1"> Sapa</div>
-          <div className="a000001 s2"> Ha Noi</div>
-          <div className="a000001 s3"> Ha Long</div>
-          <div className="a000001 s4"> Da Nang</div>
-          <div className="a000001 s5"> Hue</div>
-          <div className="a000001 s6"> Sai Gon</div>
-          <div className="a000001 s7"> Phu Quoc</div>
-          <div className="a000001 s8"> Bach Long Vi</div>
-          <div className="a000001 s9"> Da Lat</div>
-          <div className="a000001 s10"> Ca Mau</div>
-        </div>
-      </div>
-      <div className="a0002">
-        <div className="area1">
-          <div className="about-content">
-            <div className="a0003"> What is attractive in Vietnam? </div>
-            <div className="a0005">
-              <ul>
-                <li>
-                  <b>Area:</b> 331,211.6 km²{" "}
-                </li>
-                <li>
-                  {" "}
-                  <b>Population</b>: 85,789.6 thousand people (April 2009){" "}
-                </li>
-                <li>
-                  <b>Capital:</b> Hanoi{" "}
-                </li>
-                <li>
-                  <b>Climate:</b> Vietnam is a tropical monsoon country;{" "}
-                </li>
-                <li>
-                  <b>Terrain:</b>: The territory of Vietnam consists of 3 parts
-                  and 4 are hills;{" "}
-                </li>
-                <li>
-                  <b>Administrative units:</b> Vietnam has 63 provinces and
-                  cities.{" "}
-                </li>
-                <li>
-                  <b>Latitude:</b> 8º 02′ – 23º 23′ north{" "}
-                </li>
-              </ul>
-            </div>
-            <div className="a0007"> Destination Famous</div>
-            <div className="a0006">
-              <div className="scroll-box">
-                <div className="b0x1">
-                  <div className="left-box"></div>
-                  <div className="right-box">
-                    <div className="boxx-title">Ha Long</div>
-                  </div>
-                </div>
-
-                <div className="b0x1">
-                  <div className="left-box"></div>
-                  <div className="right-box">
-                    <div className="boxx-title">Ha Noi</div>
-                  </div>
-                </div>
-
-                <div className="b0x1">
-                  <div className="left-box"></div>
-                  <div className="right-box">
-                    <div className="boxx-title">Ha Long</div>
-                  </div>
-                </div>
-
-                <div className="b0x1">
-                  <div className="left-box"></div>
-                  <div className="right-box">
-                    <div className="boxx-title">Ha Noi</div>
-                  </div>
-                </div>
-
-                <div className="b0x1">
-                  <div className="left-box"></div>
-                  <div className="right-box">
-                    <div className="boxx-title">Ha Long</div>
-                  </div>
-                </div>
-
-                <div className="b0x1">
-                  <div className="left-box"></div>
-                  <div className="right-box">
-                    <div className="boxx-title">Ha Noi</div>
-                  </div>
-                </div>
-              </div>
-              <div className="explain">
-                <div className="city-info">
-                  <ul>
-                    <li>
-                      <b>Area:</b> 3.324,92 km2.{" "}
-                    </li>
-                    <li>
-                      {" "}
-                      <b>Population</b>: More 8.5 million people(02/2022).{" "}
-                    </li>
-                    <li>
-                      <b>Climate:</b> Tropical monsoon.{" "}
-                    </li>
-                    <li>
-                      <b>Consists:</b>: 12 districts, 1 town and 17 districts.{" "}
-                    </li>
-                    <li>
-                      <b>Characteristics:</b> economic, political, cultural, scientific center{" "}
-                    </li>
-                    <li>
-                      <b>Latitude:</b> 20°53' to 21°23' North latitude and 105°44' to 106°02' East longitude{" "}
-                    </li>
-                  </ul>
-                </div>
-                <div className="city-images" onLoad={handleSlider()}>
-                  {slide === 1 && <img className="city-img" src="https://vietnam.travel/sites/default/files/styles/top_banner/public/2017-06/vietnam-travel-5.jpg?itok=XVnHP3ty" alt="" />}
-                  {slide === 2 && <img className="city-img" src="https://www.pacificairlines.com/wp-content/uploads/2020/07/Web-banner_web2-min.png" alt="" />}
-                  {slide === 3 && <img className="city-img" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/33/f7/12/caption.jpg?w=700&h=-1&s=1" alt="" />}
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="menu-area1">
-            <ul>
-              <li>
-                <a href="/">Info</a>
-              </li>
-              <li>
-                <a href="/">Destination Famous</a>
-              </li>
-              <li>
-                <a href="/">Place to go</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div className="a0009"> Hot In Near Time</div>
-      <div className="tour-invn">
-        <div className="tour"></div>
-        <div className="tour"></div>
-        <div className="tour"></div>
-        <div className="tour"></div>
-        <div className="tour"></div>
-      </div>
-      <div className="seemore">
-        <div className="a0008"><a href="/">See More Tour In Viet Nam  </a></div> 
-      </div> */}
     </div>
   );
 };
 
 export default Vietnam;
+
+
+
+      // {/* <div className="body-vietnam">
+      //   <div className="box-area">
+      //     <div className="title-vietnam">
+      //       <div className="titile-top"> Plane Your Travel</div>
+      //       <div className="title-bottom"> Where you go next?</div>
+      //     </div>
+      //   </div>
+      //   <div className="picture-area">
+      //     <div className="space">
+      //       <div className="space-title">Northern</div>
+      //     </div>
+      //     <div className="space">
+      //       <div className="space-title">Central</div>
+      //     </div>
+      //     <div className="space">
+      //       <div className="space-title">South</div>
+      //       </div>
+      //   </div>
+      // </div>
+      // <div className="info-region">
+      //   <div className="title-vietnam">
+      //     <div className="titile-top"> Let's i tell you</div>
+      //     <div className="title-bottom"> Some where you can like it!</div>
+      //   </div>
+      //   <div className="picture-region">
+      //     <div className="a000001 s1"> Sapa</div>
+      //     <div className="a000001 s2"> Ha Noi</div>
+      //     <div className="a000001 s3"> Ha Long</div>
+      //     <div className="a000001 s4"> Da Nang</div>
+      //     <div className="a000001 s5"> Hue</div>
+      //     <div className="a000001 s6"> Sai Gon</div>
+      //     <div className="a000001 s7"> Phu Quoc</div>
+      //     <div className="a000001 s8"> Bach Long Vi</div>
+      //     <div className="a000001 s9"> Da Lat</div>
+      //     <div className="a000001 s10"> Ca Mau</div>
+      //   </div>
+      // </div>
+      // <div className="a0002">
+      //   <div className="area1">
+      //     <div className="about-content">
+      //       <div className="a0003"> What is attractive in Vietnam? </div>
+      //       <div className="a0005">
+      //         <ul>
+      //           <li>
+      //             <b>Area:</b> 331,211.6 km²{" "}
+      //           </li>
+      //           <li>
+      //             {" "}
+      //             <b>Population</b>: 85,789.6 thousand people (April 2009){" "}
+      //           </li>
+      //           <li>
+      //             <b>Capital:</b> Hanoi{" "}
+      //           </li>
+      //           <li>
+      //             <b>Climate:</b> Vietnam is a tropical monsoon country;{" "}
+      //           </li>
+      //           <li>
+      //             <b>Terrain:</b>: The territory of Vietnam consists of 3 parts
+      //             and 4 are hills;{" "}
+      //           </li>
+      //           <li>
+      //             <b>Administrative units:</b> Vietnam has 63 provinces and
+      //             cities.{" "}
+      //           </li>
+      //           <li>
+      //             <b>Latitude:</b> 8º 02′ – 23º 23′ north{" "}
+      //           </li>
+      //         </ul>
+      //       </div>
+      //       <div className="a0007"> Destination Famous</div>
+      //       <div className="a0006">
+      //         <div className="scroll-box">
+      //           <div className="b0x1">
+      //             <div className="left-box"></div>
+      //             <div className="right-box">
+      //               <div className="boxx-title">Ha Long</div>
+      //             </div>
+      //           </div>
+
+      //           <div className="b0x1">
+      //             <div className="left-box"></div>
+      //             <div className="right-box">
+      //               <div className="boxx-title">Ha Noi</div>
+      //             </div>
+      //           </div>
+
+      //           <div className="b0x1">
+      //             <div className="left-box"></div>
+      //             <div className="right-box">
+      //               <div className="boxx-title">Ha Long</div>
+      //             </div>
+      //           </div>
+
+      //           <div className="b0x1">
+      //             <div className="left-box"></div>
+      //             <div className="right-box">
+      //               <div className="boxx-title">Ha Noi</div>
+      //             </div>
+      //           </div>
+
+      //           <div className="b0x1">
+      //             <div className="left-box"></div>
+      //             <div className="right-box">
+      //               <div className="boxx-title">Ha Long</div>
+      //             </div>
+      //           </div>
+
+      //           <div className="b0x1">
+      //             <div className="left-box"></div>
+      //             <div className="right-box">
+      //               <div className="boxx-title">Ha Noi</div>
+      //             </div>
+      //           </div>
+      //         </div>
+      //         <div className="explain">
+      //           <div className="city-info">
+      //             <ul>
+      //               <li>
+      //                 <b>Area:</b> 3.324,92 km2.{" "}
+      //               </li>
+      //               <li>
+      //                 {" "}
+      //                 <b>Population</b>: More 8.5 million people(02/2022).{" "}
+      //               </li>
+      //               <li>
+      //                 <b>Climate:</b> Tropical monsoon.{" "}
+      //               </li>
+      //               <li>
+      //                 <b>Consists:</b>: 12 districts, 1 town and 17 districts.{" "}
+      //               </li>
+      //               <li>
+      //                 <b>Characteristics:</b> economic, political, cultural, scientific center{" "}
+      //               </li>
+      //               <li>
+      //                 <b>Latitude:</b> 20°53' to 21°23' North latitude and 105°44' to 106°02' East longitude{" "}
+      //               </li>
+      //             </ul>
+      //           </div>
+      //           <div className="city-images" onLoad={handleSlider()}>
+      //             {slide === 1 && <img className="city-img" src="https://vietnam.travel/sites/default/files/styles/top_banner/public/2017-06/vietnam-travel-5.jpg?itok=XVnHP3ty" alt="" />}
+      //             {slide === 2 && <img className="city-img" src="https://www.pacificairlines.com/wp-content/uploads/2020/07/Web-banner_web2-min.png" alt="" />}
+      //             {slide === 3 && <img className="city-img" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/33/f7/12/caption.jpg?w=700&h=-1&s=1" alt="" />}
+      //           </div>
+      //         </div>
+      //       </div>
+      //     </div>
+      //     <div className="menu-area1">
+      //       <ul>
+      //         <li>
+      //           <a href="/">Info</a>
+      //         </li>
+      //         <li>
+      //           <a href="/">Destination Famous</a>
+      //         </li>
+      //         <li>
+      //           <a href="/">Place to go</a>
+      //         </li>
+      //       </ul>
+      //     </div>
+      //   </div>
+      // </div>
+      // <div className="a0009"> Hot In Near Time</div>
+      // <div className="tour-invn">
+      //   <div className="tour"></div>
+      //   <div className="tour"></div>
+      //   <div className="tour"></div>
+      //   <div className="tour"></div>
+      //   <div className="tour"></div>
+      // </div>
+      // <div className="seemore">
+      //   <div className="a0008"><a href="/">See More Tour In Viet Nam  </a></div> 
+      // </div> */}

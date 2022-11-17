@@ -3,7 +3,7 @@
   display: flex;
 }
 .thead {
-  width: 33%;
+  width: 34% !important;
 }
 .pleft {
   background-image: url("./../../data/images/buffalo.jpg");
@@ -52,6 +52,69 @@
   color: white;
   margin: 0 0 0 28%;
 }
+
+.banner-picture {
+  width: 100%;
+}
+
+.title-travelstyle {
+  color: #333 !important;
+}
+
+.are-main {
+
+}
+
+.page-up{
+  display: flex;
+  align-items: center;
+  padding: 25px;
+  background-color: #ffffff !important;
+  margin-bottom: 25px;
+}
+.city {
+  width: 60%;
+}
+
+.page-up span {
+  font-size: 14px !important;
+}
+
+.cityTour-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 5% 0 5%;
+  border-left: 2px solid #3333;
+}
+
+.cityTour-content div:nth-child(1) {
+  font-family: "Pacifico", cursive;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.cityTour-content div:nth-child(2) {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.cityTour-content div:nth-child(3) {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: rgb(140, 140, 140);
+  margin: 18px 0;
+  text-align: left;
+}
+
+.cityTour-content img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+}
+
 .body-vietnam {
   width: 80%;
   margin: 5% 0 0 10%;
@@ -63,6 +126,8 @@
   font-size: 30px;
   font-family: fantasy;
 }
+
+
 .title-bottom {
   font-size: 50px;
   font-family: fantasy;
