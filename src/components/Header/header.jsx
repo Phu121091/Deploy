@@ -19,14 +19,14 @@ import MobileMenu from "./MobileMenu";
 
 const Header = () => {
 
-  const User = useContext(UserContext);
+  
 
 
   const [showfind,setshowfind]=useState('hidden');
   const [showlog,setshowlog] =useState('hidden');
-
   const user = useContext(UserContext);
-  console.log(user);
+  const [User,setUser]=useState(user);
+  
   console.log(Stylist);
 
   const navigate = useNavigate();
@@ -34,7 +34,7 @@ const Header = () => {
 
 
   const handleLogout = () => {
-    user.change(null);
+    User.change(null);
     navigate("/LogIn", { replace: true });
   };
 //design link active
@@ -53,8 +53,29 @@ const Header = () => {
   }
 // Show menu mobile
   const [showmobile,setshowmobile] =useState('none')
-  const Showlist = () => { (showmobile=='none')?setshowmobile('block'):setshowmobile('none') }
+  const Showlist = () => { (showmobile=='none')?setshowmobile('block'):setshowmobile('none') };
+  // click ra ngoài
+
+  // window.addEventListener('onclick');
+  // const Clickout =() =>{
+  //   setshowlog('hidden')
+  // }
+  // const Stopevent = (event) => {
+  //   event.stopPropagation();
+  // }
+  useEffect(() => {
+    
+    setUser(user);
   
+
+  },[location]);
+    const Logout = () => {
+      localStorage.removeItem("currentUser");
+      navigate("/log-in", { replace: true });
+    };
+
+
+
 
   return (
     <div className="header">
@@ -187,12 +208,14 @@ const Header = () => {
       <BiPaperPlane/><span>{user.shoped.length}</span>
       </Link> */}
       
-      { user.username ?
+      { User.username ?
       (
         <div className="log">
           
           <Link to='/UserInfor'>
-          {user.username.admin?<GrUserAdmin/>:<BsPerson/>}
+          {/* {User.username.admin?<GrUserAdmin/>: */}
+          <BsPerson/>
+          
           </Link>
 
           <button className="logout" onClick={handleLogout}>Logout</button>
@@ -203,6 +226,7 @@ const Header = () => {
         <div className="log" onClick={()=>Showlog()}>
         <p>For User</p>
         <IoIosArrowForward/>
+
         </div>
         
       )

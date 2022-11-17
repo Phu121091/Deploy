@@ -23,7 +23,7 @@ function LogIn() {
     }
    User.change(user);
    console.log(User.username);
-//    localStorage.setItem("currentUser", JSON.stringify(user))
+  
    navigate("/UserInfor", { replace: true });
   }
 
